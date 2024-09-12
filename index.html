@@ -403,7 +403,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="flip-box">
 			<div class="flip-box-inner">
 				<div class="flip-box-front">
@@ -413,21 +413,34 @@
 				</div>
 				<div class="flip-box-back">
 					<a href="Comites.html" target="_blank" tyle="display: contents;">
-						<h2 style="font-size: 22px; font-family: Arial; color:#ffff"><br><br><br>Actas De Comités Del
+						<h2  style="font-size: 22px; font-family: Arial; color:#ffff"><br><br><br>Actas De Comités Del
 							CCLMichoacán
-						</h2>
 					</a>
-				</div>
+					
+				</div >
 			</div>
 		</div>
 	</div>
+	<h3 id="contac"></h3>
+	<br><br><br><br><br><br>
+	<h3  class="wow fadeInLeft" style="text-align: center ; font-family:Nutmeg, Sans-serif;">Contacto</h3>
+	<h3 class="wow fadeInLeft" style="text-align: center ; font-family:Nutmeg, Sans-serif;font-size: 16px">Conoce el Centro de Conciliación Laboral del Estado de Michoacán</h3>
+    <div class="containermap">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15024.946826966185!2d-101.1639715!3d19.6886758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86972e4da3b81177%3A0xb3bdb18efbe90610!2sCentro%20de%20Conciliaci%C3%B3n%20Laboral%20del%20Estado%20de%20Michoac%C3%A1n!5e0!3m2!1ses-419!2smx!4v1695243383176!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%; height:100%;"></iframe>
+        </div>
+        <div class="info-containermap">
+			<br><br>
+            <h3><img src="images/SubMenu/telefono.jpeg" class="icon" style="font-family:Nutmeg,">Teléfono</h3>
+            <p>(443) 6886337</p>
+            <br><br>
+            <h3><img src="images/SubMenu/ubica.jpeg" class="icon" style="font-family:Nutmeg,">Dirección</h3>
+            <p>Boulevard García de Leon #1575, Col. Chapultepec Oriente.</p>
+        </div>
+    </div>
 	
-	<div id="map"></div>
-	<script src="ttps://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-
 	
-
-	<br><br><br><br><br>
+	<br><br>
 	<!-- Banner-->
 	<div class="container container-style-1">
 		<div class="owl-carousel  owl-style-10" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4"
@@ -481,6 +494,7 @@
      Global Mailform Output-->
 	<div class="snackbars" id="form-output-global"></div>
 	<!-- Javascript-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="js/core.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="script.js"></script>
@@ -516,7 +530,7 @@
 				<li>
 					<div class="unit unit-spacing-xs">
 						<div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-						<div class="unit-body"><a class="phone" id="contac" style="color:#ffff" href="tel:#">(443)
+						<div class="unit-body"><a class="phone"  style="color:#ffff" href="tel:#">(443)
 								6886337</a></div>
 					</div>
 				</li>
@@ -554,19 +568,7 @@
 		  }
 		}
 		</script>-->
-		<script>
-		function iniciarMap(){
-			var coord = {lat: -101.1739845, lng: -101.1639715};
-			var map = new google.maps.Map(document.getElementById('mapa'),{
-			  acercamiento: 10,
-			  center: coord
-			});
-			 var marker= new google.maps.Marker({
-			  position: coord,
-			  mapa: mapa
-			});
-		}
-	</script>
+		
 </body>
 
 </html>
