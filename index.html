@@ -122,6 +122,7 @@
 			</nav>
 		</div>
 	</header>
+	
 	<div style="display: block;">
 		<div class="marquee-container" style="display: block; position: relative;">
 			<div class="marquee-text">
@@ -138,7 +139,9 @@
 		</div>
 	</div>
 	
-	
+	<div class="codigoimg">
+		<img src="documentos/ST/Comités/CEtica/EF2024/Codigo.jpeg" >
+	</div>
 	
 	<div class="banner div-quienes-somos" style="max-width: none;">
 			<!-- Carrusel de Imágenes -->
@@ -419,7 +422,11 @@
 		</div>
 	</div>
 	
+	<div id="map"></div>
+	<script src="ttps://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
 	
+
 	<br><br><br><br><br>
 	<!-- Banner-->
 	<div class="container container-style-1">
@@ -476,6 +483,8 @@
 	<!-- Javascript-->
 	<script src="js/core.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="script.js"></script>
+	
 	<!-- coded by Himic
     <script src="//code.tidio.co/2liai9qagh99gm9wrm7f9ki7wij7cpun.js" as></script>
     https://api.whatsapp.com/send?phone=4434355484
@@ -523,6 +532,7 @@
 			</ul>
 		</div>
 	</footer>
+	
 	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
@@ -544,6 +554,19 @@
 		  }
 		}
 		</script>-->
+		<script>
+		function iniciarMap(){
+			var coord = {lat: -101.1739845, lng: -101.1639715};
+			var map = new google.maps.Map(document.getElementById('mapa'),{
+			  acercamiento: 10,
+			  center: coord
+			});
+			 var marker= new google.maps.Marker({
+			  position: coord,
+			  mapa: mapa
+			});
+		}
+	</script>
 </body>
 
 </html>
