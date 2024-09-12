@@ -15457,22 +15457,11 @@ body {
 	max-width: 900px;
 }
 .menu-item {
-	background-color: #6A0F49;
-	color: white;
-	padding: 15px;
-	margin: 10px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 5px;
-	cursor: pointer;
-	max-width: 3000px;
-	width: 255px;
-	text-align: center;
+	font-size: 20px;
+	color:  black;
+	
 }
-.menu-item:hover {
-	background-color: #9c2c73;
-}
+
 .menu-item img {
 	width: 30px;
 	height: 30px;
@@ -15492,6 +15481,7 @@ body {
 	display: inline-block;
 	padding-left: 100%; 
 	animation: marquee 20s linear infinite; 
+	
 }
 
 @keyframes marquee {
@@ -15562,6 +15552,7 @@ table.tableizer-table {
 	margin: 3px;
 	border: 1px solid #CCC;
 	color: #6A0F49;
+	
 
 }
 .tableizer-table th {
@@ -15569,6 +15560,15 @@ table.tableizer-table {
 	color: #FFF;
 	font-weight: bold;
 }
+.tableizer-table td:nth-child(2), .tableizer-table th:nth-child(2){
+    
+   
+	width: 400px; /* Ajusta el ancho como necesites */
+		
+	   
+	padding: 10px; /* Aumenta el espacio interno */
+	}
+
 
 /* Para cinta de estadisticas*/
 .marquee-container {
@@ -15696,11 +15696,13 @@ h4 {
 table {
     width: 100%; 
     border-collapse: collapse; 
+	
 }
 
 th, td {
     padding: 8px 12px;
     text-align: left;
+	
 	
 	
 }
@@ -15717,6 +15719,7 @@ thead {
 }
 .mayusculas {
     text-transform: uppercase;
+	color: #6A0F49;
 }
 
 .i-tabla {
@@ -15724,15 +15727,92 @@ thead {
     border-collapse: collapse; 
 }
 
-.i-tabla th, .i-tabla td {
+.i-tabla .th {
     padding: 10px;
     border: 1px solid #000; 
     text-align: left;
-	color: #6A0F49; 
+	color: white;
 
+}
+.i-tabla .td{
+	padding: 10px;
+    border: 1px solid #000; 
+    text-align: left;
+	color: #6A0F49;
 }
 
 .tabla-contenedor {
     width: 50%; 
     margin: 0 auto; 
+
 }
+.estadis{
+	background-color: white;
+}
+
+/* Pendiente */
+.scrollable-table2 {
+    max-height: 200px; /* Ajusta este valor según tus necesidades */
+    overflow-y: auto;  /* Habilita el scroll vertical */
+  }
+
+  
+
+  .codigoimg img {
+	display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+}
+.codigoimg img {
+	max-width: 100%; 
+	height: auto; 
+}
+
+
+  
+
+
+
+.containermap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.map-container {
+	flex: 1; /* El mapa ocupa el espacio disponible */
+	flex: 1 1 100%;
+	width: 100%; /* Ajusta el ancho para pantallas grandes */
+	max-width: 900px; /* Máximo ancho */
+	height: 350px; 
+	margin: 20px 0;
+	margin-left: 30px;
+}
+.info-containermap {
+	padding: 20px; /* Espacio dentro del contenedor de información */
+	background-color: white; /* Color de fondo */
+	width: 300px; /* Ancho del contenedor de información */
+	font-family: 'Arial', sans-serif; 
+	width: 100%; /* Ancho completo en pantallas pequeñas */
+    max-width: 300px;
+}
+
+.info-containermap h3, .info-containermap p {
+	margin: 9px 0; /* Espaciado vertical entre elementos */
+	font-family: 'Arial', sans-serif; 
+}
+.icon {
+	width: 24px; /* Ancho de los iconos */
+	vertical-align: middle; /* Alineación de los iconos con el texto */
+	margin-right: 10px; /* Espacio a la derecha de los iconos */
+}
+@media (min-width: 600px) {
+    .map-container, .info-containermap {
+        flex: 1; /* Cada contenedor toma la mitad del espacio disponible en pantallas más grandes */
+        margin-left: 20px;
+    }
+    .info-containermap {
+        width: auto; /* Ancho automático basado en el contenido en pantallas grandes */
+    }
+}
+
+
