@@ -9276,7 +9276,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-pagination-bullet:hover {
-	color: #ffffff;
+	color: black;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active .swiper-bullet-line, .swiper-pagination-bullet:hover .swiper-bullet-line {
@@ -13880,6 +13880,7 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	/* firefox */
 	box-sizing: border-box;
 	/* css3 */
+	visibility: hidden;
 }
 
 .select2-container .select2-choice {
@@ -15750,11 +15751,8 @@ thead {
 	background-color: white;
 }
 
-/* Pendiente */
-.scrollable-table2 {
-    max-height: 200px; /* Ajusta este valor según tus necesidades */
-    overflow-y: auto;  /* Habilita el scroll vertical */
-  }
+
+  
 
   
 
@@ -15777,42 +15775,61 @@ thead {
 .containermap {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .map-container {
-	flex: 1; /* El mapa ocupa el espacio disponible */
+	flex: 1; 
 	flex: 1 1 100%;
-	width: 100%; /* Ajusta el ancho para pantallas grandes */
-	max-width: 900px; /* Máximo ancho */
+	width: 100%; 
+	max-width: 900px; 
 	height: 350px; 
 	margin: 20px 0;
 	margin-left: 30px;
 }
 .info-containermap {
-	padding: 20px; /* Espacio dentro del contenedor de información */
-	background-color: white; /* Color de fondo */
-	width: 300px; /* Ancho del contenedor de información */
+	padding: 20px; 
+	background-color: white; 
+	width: 300px; 
 	font-family: 'Arial', sans-serif; 
-	width: 100%; /* Ancho completo en pantallas pequeñas */
+	width: 100%; 
     max-width: 300px;
 }
 
 .info-containermap h3, .info-containermap p {
-	margin: 9px 0; /* Espaciado vertical entre elementos */
+	margin: 9px 0; 
 	font-family: 'Arial', sans-serif; 
+	font-size: 18px;
 }
 .icon {
-	width: 24px; /* Ancho de los iconos */
-	vertical-align: middle; /* Alineación de los iconos con el texto */
-	margin-right: 10px; /* Espacio a la derecha de los iconos */
+	width: 24px; 
+	vertical-align: middle; 
+	margin-right: 10px; 
 }
 @media (min-width: 600px) {
     .map-container, .info-containermap {
-        flex: 1; /* Cada contenedor toma la mitad del espacio disponible en pantallas más grandes */
+        flex: 1; 
         margin-left: 20px;
     }
     .info-containermap {
-        width: auto; /* Ancho automático basado en el contenido en pantallas grandes */
+        width: auto; 
     }
 }
 
 
+
+
+
+
+
+.scrollable-select {
+    height: 80px; 
+    overflow-y: scroll; 
+    width: 100%; 
+	display: none;
+  }
+
+.select-municipios{
+	display: block !important;
+	height: 80px; 
+    overflow-y: scroll; 
+  }
