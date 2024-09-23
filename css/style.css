@@ -15776,6 +15776,7 @@ thead {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 0;
 }
 .map-container {
 	flex: 1; 
@@ -15783,8 +15784,8 @@ thead {
 	width: 100%; 
 	max-width: 900px; 
 	height: 350px; 
-	margin: 20px 0;
-	margin-left: 30px;
+	margin: 0;
+	margin-left: 0;
 }
 .info-containermap {
 	padding: 20px; 
@@ -15796,7 +15797,7 @@ thead {
 }
 
 .info-containermap h3, .info-containermap p {
-	margin: 9px 0; 
+	margin:  0; 
 	font-family: 'Arial', sans-serif; 
 	font-size: 18px;
 }
@@ -15808,7 +15809,7 @@ thead {
 @media (min-width: 600px) {
     .map-container, .info-containermap {
         flex: 1; 
-        margin-left: 20px;
+        margin-left: 0;
     }
     .info-containermap {
         width: auto; 
@@ -15833,3 +15834,36 @@ thead {
 	height: 80px; 
     overflow-y: scroll; 
   }
+
+
+   
+footer {
+    background-color: #6A0F49;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.footer-logo img {
+    width: 120px; /* Ajusta según el tamaño deseado */
+}
+
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.social-icon img {
+    width: 30px; /* Establece el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+}
