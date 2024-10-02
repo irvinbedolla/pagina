@@ -15864,6 +15864,97 @@ footer {
 }
 
 .social-icon img {
-    width: 30px; /* Establece el ancho de las imágenes */
-    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+    width: 30px; 
+    height: auto; 
 }
+
+.entry-title {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+.nota-contenido {
+    text-align: left; 
+	font-size: 16px;
+}
+.nota-contenido {
+	text-align: left; 
+}
+
+.nota-contenido a {
+	color: #0000ff; 
+	text-decoration: none; 
+}
+
+.nota-contenido a:hover {
+	text-decoration: underline; 
+}
+
+h5 {
+	margin: 0; 
+}
+.nota-contenido2 {
+	text-align: left;
+	font-size: 15px;
+	cursor: pointer;
+
+}
+.info {
+	display: none; 
+	margin-top: 5px; 
+	font-size: 14px; 
+	color: #333; 
+}
+
+
+/* para citas*/
+body {
+	font-family: Nutmeg, sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 20px;
+}
+.containercits {
+	max-width: 600px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(106, 15, 73, 0.9);
+}
+h2 {
+	text-align: center;
+	color: white;
+	font-family: Nutmeg, sans-serif;
+
+}
+label {
+	display: block;
+	margin-top: 10px;
+	color: white;
+}
+input, select {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+}
+.submitBtn{
+	width: 100%;
+	padding: 10px;
+	background-color: #6A0F49;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #6A0F49;
+}
+.message {
+	margin-top: 20px;
+	text-align: center;
+	color: brown;
+}
+
+

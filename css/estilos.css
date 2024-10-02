@@ -248,8 +248,10 @@ h5{
   letter-spacing: .075em !important;
 }
 
-.personal{
+.personal1{
   font-family: "Nutmeg", Sans-serif !important;
+  
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -354,3 +356,287 @@ h5{
 }
 
 
+/*para calcu*/
+.calculadora {
+  margin-top: 2px;
+  display: block;
+  height: 100vh;
+  background-color: rgb(204, 169, 169);
+  align-content: center;
+}
+
+.conjunto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.botones {
+  flex: 1 0 20%;
+  /* 100% / 6 = 16.66% */
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.separacion {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: auto;
+}
+
+.separacion a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.periodobtn{
+  background-color:#6A0F49 ; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition-duration: 0.4s; 
+}
+
+.separacion a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+.description {
+  margin-bottom: 10px;
+  /* Espacio entre el texto y el elemento */
+  
+}
+
+.calculoBtns {
+  display: flex;
+  justify-content: center;
+}
+
+.calcular {
+  margin: 10px;
+  
+}
+.calcubtn{
+  background-color:#6A0F49 ; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition-duration: 0.4s; 
+}
+
+.limpiar {
+  margin: 10px;
+
+}
+.limpiabtn{
+  background-color:#6A0F49 ; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition-duration: 0.4s; 
+}
+
+.desglose{
+  display: none;
+}
+
+.resultados {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que las cajas se acomoden en varias filas */
+  gap: 10px;
+  /* Espacio entre las cajas */
+  text-align: center;
+}
+
+.caja {
+  flex: 1;
+  /* Las cajas tomarán el mismo espacio disponible */
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: 300px;
+  /* Ancho mínimo para que las cajas no sean demasiado pequeñas */
+}
+
+.resumen {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  /* Permite que los elementos se muevan a la siguiente línea si no caben */
+}
+
+.resumen .caja {
+  flex: 1;
+  /* Hace que las cajas ocupen el mismo espacio en pantallas grandes */
+  min-width: 200px;
+  /* Define un ancho mínimo para controlar cuándo se colocan una debajo de la otra */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas */
+  gap: 10px;
+}
+
+.subtitulos{
+  display: flex;
+  border: solid 5px rgb(90, 19, 19);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.subtitulos p{
+  margin-bottom: 0 !important;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.deshabilitado {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    flex: 1 1 100%;
+  }
+
+  .botones {
+    flex: 1 1 100%;
+    /* Cuando la pantalla es pequeña, ocupa el 100% */
+  }
+
+  .div-somos {
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .div-imagen-somos {
+    width: auto !important;
+  }
+
+  .texto-somos {
+    margin-top: 0 !important;
+  }
+
+  .imagen-somos {
+    width: auto !important;
+    height: 15em !important;
+  }
+
+  .tramite {
+    display: block !important;
+  }
+
+  .div-imagen-tramite {
+    display: block !important;
+    text-align: center !important;
+    padding: 1em !important;
+  }
+
+  .imagen-tramite {
+    width: auto !important;
+  }
+
+
+  .div-footer {
+    display: block !important;
+    padding: 40px !important;
+    text-align: center !important;
+  }
+
+  .contacto {
+    font-size: inherit !important;
+    margin-bottom: 0px !important;
+    margin-top: 25px !important;
+    margin-left: 0px !important;
+  }
+
+  .sociales {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
+
+  .info-somos {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+
+  .p-somos {
+    font-family: "Montserrat", sans-serif !important;
+    text-align: justify !important;
+  }
+
+  .nombre-footer {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .container-personal {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-personal {
+    display: inline;
+  }
+
+  .correos {
+    display: inline !important;
+    width: 100% !important;
+  }
+
+  .resultados {
+    flex-direction: column;
+    /* Apila las cajas verticalmente en pantallas pequeñas */
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    /* Mantiene tres columnas en pantallas pequeñas */
+  }
+
+  .resumen {
+    flex-direction: column;
+    /* Cambia la dirección de flex a columna para apilar las cajas */
+  }
+
+}
