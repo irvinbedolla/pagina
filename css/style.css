@@ -15921,18 +15921,18 @@ body {
 	background: white;
 	padding: 20px;
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(106, 15, 73, 0.9);
+	
 }
 h2 {
 	text-align: center;
-	color: white;
+	color: black;
 	font-family: Nutmeg, sans-serif;
 
 }
 label {
 	display: block;
 	margin-top: 10px;
-	color: white;
+	color: black;
 }
 input, select {
 	width: 100%;

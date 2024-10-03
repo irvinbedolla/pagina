@@ -358,27 +358,33 @@ h5{
 
 /*para calcu*/
 .calculadora {
-  margin-top: 2px;
+  margin-top: 20px;
   display: block;
-  height: 100vh;
-  background-color: rgb(204, 169, 169);
+  height: auto;
+  background-color: #e0d9d9;
   align-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px; /* Ajuste del ancho máximo a 300px */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
 }
 
 .conjunto {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .botones {
   flex: 1 0 20%;
-  /* 100% / 6 = 16.66% */
   box-sizing: border-box;
   padding: 10px;
   background-color: #f0f0f0;
   text-align: center;
   border: 1px solid #ccc;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .separacion {
@@ -398,18 +404,17 @@ h5{
   text-align: left;
 }
 .periodobtn{
-  background-color:#6A0F49 ; 
-    border: none; 
-    color: white; 
-    padding: 15px 32px; 
-    text-align: center;
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 8px; 
-    transition-duration: 0.4s; 
+  background-color: #6A0F49;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.periodobtn:hover {
+  background-color: #5a2b3a;
 }
 
 .separacion a:hover {
@@ -428,7 +433,8 @@ h5{
 
 .calculoBtns {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .calcular {
@@ -436,18 +442,14 @@ h5{
   
 }
 .calcubtn{
-  background-color:#6A0F49 ; 
-    border: none; 
-    color: white; 
-    padding: 15px 32px; 
-    text-align: center;
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 8px; 
-    transition-duration: 0.4s; 
+  background-color: #701845;
+  border: none;
+  color: white;
+  padding: 8px 20px; /* Reduce el padding */
+  font-size: 14px; /* Reduce el tamaño de fuente */
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Asegura que el ancho sea solo el necesario por el contenido */
 }
 
 .limpiar {
@@ -455,20 +457,19 @@ h5{
 
 }
 .limpiabtn{
-  background-color:#6A0F49 ; 
-    border: none; 
-    color: white; 
-    padding: 15px 32px; 
-    text-align: center;
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 8px; 
-    transition-duration: 0.4s; 
+  background-color: #701845;
+  border: none;
+  color: white;
+  padding: 8px 20px; /* Reduce el padding */
+  font-size: 14px; /* Reduce el tamaño de fuente */
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Asegura que el ancho sea solo el necesario por el contenido */
+  
 }
-
+.limpiabtn:hover {
+  background-color: #5a2b3a;
+}
 .desglose{
   display: none;
 }
@@ -517,7 +518,7 @@ h5{
 
 .subtitulos{
   display: flex;
-  border: solid 5px rgb(90, 19, 19);
+  border: solid 5px #6A0F49 ;
   border-radius: 10px;
   text-align: center;
   justify-content: center;
@@ -639,4 +640,59 @@ h5{
     /* Cambia la dirección de flex a columna para apilar las cajas */
   }
 
+}
+input[type="text"], input[type="date"] {
+  width: 100%; /* Mantén el 100% del ancho disponible dentro del contenedor */
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.calcubtn:hover {
+  background-color: #5a2b3a;
+}
+@media only screen and (max-width: 600px) {
+  .calculoBtns {
+    flex-direction: column;
+  }
+
+  .calcubtn, .limpiabtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.textcal {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fffefe;
+}
+.textcal1 {
+  color: #6A0F49;
+  font-weight: bold;
+  font-size: 21px;
+  font-family: Nutmeg, Sans-serif;
+  text-align: center;
+}
+.note {
+  font-weight: bold;
+  
+  color: #6A0F49;
+  margin-top: 20px;
+}
+p {
+  margin: 10px 0;
+  text-align: justify;
 }
