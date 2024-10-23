@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCLMichoacán</title>
+    <title>2do. Encuentro Nacional</title>
     <link rel="icon" href="images/cclm.ico" type="image/x-icon">
-    <!-- Stylesheets-->
+    
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -15,27 +15,54 @@
     
 </head>
 <body style="display: block;">
-    <header class="section page-header"  >
-        <nav class="barnam" data-layout="rd-navbar-fixed">
-            <div class="rd-navbar-inner-outer">
-                <div class="rd-navbar-inner">
-                    <div class="rd-navbar-panel">
-                        <div class="rd-navbar-brand">
-                            <img class="small-logo" src="images/micrositio/logo final.png" alt="Logo">
-                        </div>
-                        <ul class="nav-links" style="margin-left: auto; list-style: none; display: flex; gap: 20px;">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="#">Bienvenida</a></li>
-                            <li><a href="Documentos/Proyecto Ejecutivo 2do. Encuentro Nacional.pdf" target="_blank" rel="noopener noreferrer">Programa</a></li>
-                        </ul>
-                    </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                
+                <div class="logo">
+                    <img src="images/micrositio/logo final.png" alt="Logo" />
                 </div>
+    
+                
+                <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Bienvenida</a></li>
+        <li><a href="Documentos/Programa del Segundo Encuentro Nacional de la Conciliación .pdf" target="_blank">Programa</a></li>
+        <li>
+            <a href="#" onclick="toggleSubmenu(event)">Foros</a>
+            
+            <ul class="submenu" id="submenu-foros">
+                <li><a href="Foros U.html">Universitarios</a></li>
+                <li><a href="#">Generales</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+               
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
             </div>
         </nav>
-        
-      </header>
+    </header>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+     <script>
+        function toggleSubmenu(event) {
+            event.preventDefault(); 
+            const submenu = document.getElementById("submenu-foros");
+            if (submenu.style.display === "none" || submenu.style.display === "") {
+                submenu.style.display = "block"; 
+            } else {
+                submenu.style.display = "none"; 
+            }
+        }
+    </script>
+    
 <div style="background-image: url('images/micrositio/Recurso\ 2.png');">
-      <br><br><br><br><br><br><br><br>
+      <br>
       
       <div class="banner-container">
         <!--<div class="slider">-->
@@ -49,39 +76,58 @@
        
     <br>
     <div class="contenidos"><br>
-        
         <div class="content-wrapper">
             <div class="map-section">
-                    <h1 class="text-section">Ubicación</h1>
-                    <p class="text-section">Honorable Congreso del Estado de Michoacán</p>
-                   
-                <div class="map-section">
+                <h1 class="text-section">Ubicación</h1>
+                <p class="text-section">Honorable Congreso del Estado de Michoacán</p>
+              
+                <div class="map-container">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7983618430173!2d-101.1905686!3d19.7029664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e5448a4badd%3A0x52c062cf7566fda!2sH.%20Congreso%20del%20Estado%20de%20Michoac%C3%A1n%20de%20Ocampo!5e0!3m2!1ses!2smx!4v1696958123456!5m2!1ses!2smx"
-                        width="100%" 
-                        height="300" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7983618430173!2d-101.1905686!3d19.7029664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e5448a4badd%3A0x52c062cf7566fda!2sH.%20Congreso%20del%20Estado%20de%20Michoac%C3%A1n%20de%20Ocampo!5e0!3m2!1ses!2smx!4v1696958123456!5m2!1ses!2smx"
+                      allowfullscreen="" 
+                      loading="lazy">
                     </iframe>
                 </div>
-                
+               
             </div>
+    
             <div class="image-section">
                 <div class="campimg">
-                    <img class="image-editor" src="images/cartel.jpeg" alt="Cartel" />
+                    <img class="image-editor" src="images/cartel.png" alt="Cartel" />
                 </div>
             </div>
         </div>
     </div>
-    
+    <br><br>
+    <div class="button-container">
+        <button onclick="mostrarTexto('Reflexionar acerca del impacto del Nuevo Sistema de Justicia Laboral en el país mediante la conciliación, la justicia laboral y los derechos humanos laborales, realizando el primer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
+        >Objetivo</button>
+        <button onclick="mostrarTexto('Convocar e informar del impacto del Nuevo Sistema de Justicia Laboral, que a partir de la reforma constitucional publicada en el Diario Oficial de la Federación del 24 de febrero, en el que se adecuaron las fracciones XX y XX Bis apartado A del artículo 123 de la Constitución Política de los Estados Unidos Mexicanos. De esta manera, nacieron nuevas instituciones en materia laboral con la finalidad de conocer las dos etapas del nuevo modelo, por un lado, se encuentran los Centros de Conciliación Laboral y, por otro los Tribunales Laborales, adscritos a los poderes judiciales, es por esta razón que resulta necesario organizar y celebrar el primer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
+        >Misión</button>
+        <button onclick="mostrarTexto('Promover la participación de los protagonistas del Nuevo Sistema de Justicia Laboral, como son los Centros de Conciliación, Tribunales Laborales, académicos, operadores jurídicos, estudiantes y público en general, a través de espacios de reflexión, conferencias magistrales, conversatorios y mesas de trabajo donde se puedan exponer ideas, experiencias y perspectivas acerca del tema, dando como resultado un libro de memorias donde se destaque la importancia, académica, social y cultural de Nuevo Sistema de Justicia Laboral en el país.')"
+        >Visión</button>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <script>
+        function mostrarTexto(texto) {
+            const messageDiv = document.getElementById("message");
+            if (messageDiv.textContent === texto && messageDiv.style.visibility === 'visible') {
+                messageDiv.style.visibility = 'hidden'; 
+            } else {
+                messageDiv.textContent = texto; 
+                messageDiv.style.visibility = 'visible'; 
+            }
+        }
+    </script>
      <br><br>
-    <div id="templatemo_main" style="text-align: center;">
+    <div id="templatemo_main" style="text-align: center;" >
        <!--  <img src="images/cartel.jpeg" width="1000"  height="1000" />-->
         <br><br><br><br>
         
         
-        <video width="1000"  height="550" controls  >
+        <video width="1000"  class="video" height="550" controls  >
             <source src="images/Videos/video2.mp4" type="Video/mp4">
          </video>
     </div>
@@ -117,3 +163,11 @@
    
 </body>
 </html>
+
+
+
+
+
+
+
+
