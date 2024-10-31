@@ -313,11 +313,14 @@ body, html {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
+    text-decoration: none;
   }
 
   .styled-button:hover {
     transform: translateY(-3px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+    color: #CEA845;
+    text-decoration: none;
   }
 
   .styled-button:active {
@@ -547,17 +550,18 @@ footer {
     cursor: pointer;
     font-family: Arial, sans-serif;
     padding: 10px 20px;
-    cursor: pointer;
     border: none; 
     background-color: #496163; 
     color: white; 
     border-radius: 20px; 
     font-size: 19px; 
     transition: background-color 0.3s; 
+   
 }
 
 .button-container button:hover {
     background-color: #CEA845; 
+    text-decoration: none;
 }
 
 .message {
