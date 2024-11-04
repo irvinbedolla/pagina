@@ -335,6 +335,7 @@ body, html {
 
 
 
+
 footer {
     background-color: #496163;
     color: #ffffff;
@@ -646,5 +647,24 @@ h1 {
 
     .divider {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        padding: 10px; 
+    }
+
+    .column img {
+        max-width: 100%;  
+        height: auto;     
+    }
+
+    .qr-code img {
+        width: 80px;  
+    }
+
+    .column a {
+        font-size: 14px; 
     }
 }
