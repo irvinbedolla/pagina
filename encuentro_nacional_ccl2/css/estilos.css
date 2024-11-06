@@ -675,17 +675,27 @@ h1 {
     display: flex;
     gap: 20px;
     text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    color: #496163;
-    
+    border: 1px solid  #496163;
+    padding: 15px;
+    border-radius: 38px;
+    color: #000000;
+    align-items: center;
+    gap: 20px;
+    align-items:  baseline;
     justify-content: center;
+    width: 100vh;
+    margin: inherit;
+    transition: transform 0.2s ease;
+}
+#contador:hover {
+    transform: translateY(-10px);  
 }
 
 #contador div {
     font-size: 1.5rem;
     text-align: center;
+    padding: 3px;
+    
 }
 
 #contador span {
@@ -693,33 +703,69 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
-@media (max-width: 768px) {
-    #contador {
-        flex-direction: column;  
-        gap: 10px;  
-        padding: 15px;
-    }
 
+.separador {
+    font-size: 2.5rem;  
+    font-weight: bold;
+    color: #496163; 
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #contador {
+        font-size: 0.8rem; 
+        max-width: 350px; 
+    }
+    
     #contador div {
-        font-size: 1.2rem;  
+        font-size: 0.8rem; 
     }
 
     #contador span {
-        font-size: 2rem;  
+        font-size: 1rem; 
+    }
+    
+    .separador {
+        font-size: 1rem; 
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     #contador {
-        gap: 5px;
-        padding: 10px;
+        font-size: 0.8rem; 
+        max-width: 350px; 
     }
-
+    
     #contador div {
-        font-size: 1rem;  
+        font-size: 0.8rem; 
     }
 
     #contador span {
-        font-size: 1.5rem;  
+        font-size: 1rem; 
+    }
+    
+    .separador {
+        font-size: 1rem; 
     }
 }
+@media (max-width: 1024px) and (min-width: 600px) {
+    #contador {
+        font-size: 1.5rem; 
+        max-width: 600px; 
+    }
+
+    #contador div {
+        font-size: 1.2rem; 
+    }
+
+    #contador span {
+        font-size: 1.8rem; 
+    }
+    
+    .separador {
+        font-size: 1.5rem; 
+    }
+}
+
