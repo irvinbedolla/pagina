@@ -28,7 +28,7 @@
                     <li><a href="Documentos/programa.pdf" target="_blank">Programa</a></li>
                     <li><a href="Foros U.html">Foros</a></li>
                     <li><a href="Documentos/Memorias 1ro encuentro.pdf" target="_blank">Memorias 1ro encuentro</a></li>
-                    
+
                 </ul>
                 
     
@@ -58,7 +58,31 @@
 <div style="background-image: url('images/micrositio/Recurso\ 2.png');">
     <br><br><br>
       
-      <div class="fullscreen-image"> <img src="images/slider/Ya-casi.jpg" alt="Imagen de fondo"> </div>
+    
+<div class="fullscreen-image">
+    <img src="images/slider/Ya-casi.jpg" alt="Imagen 1" class="slider-img">
+    <img src="images/slider2/img1.JPG" alt="Imagen 2" class="slider-img" style="display:none;">
+    <img src="images/slider2/img2.JPG" alt="Imagen 3" class="slider-img" style="display:none;">
+    <img src="images/slider2/img7.jpg" alt="Imagen 3" class="slider-img" style="display:none;">
+</div>
+
+
+
+<script> images = document.querySelectorAll('.fullscreen-image .slider-img');
+let currentIndex = 0;
+function changeImage() {
+    images[currentIndex].style.display = 'none';
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].style.display = 'block';
+}
+
+setInterval(changeImage, 2000);
+</script>
+<script> function changeImage() {
+    images[currentIndex].classList.remove('active');  
+    currentIndex = (currentIndex + 1) % images.length; 
+    images[currentIndex].classList.add('active');     
+}</script>
 
 
     <div class="fbase">
@@ -224,23 +248,23 @@ function moveCarousel(n) {
     slideIndex += n;
 
     if (slideIndex >= totalSlides) {
-        slideIndex = 0; // Si se pasa del último, vuelve al primero
+        slideIndex = 0; 
     }
     if (slideIndex < 0) {
-        slideIndex = totalSlides - 1; // Si se pasa del primero, va al último
+        slideIndex = totalSlides - 1; 
     }
 
     const offset = -(slideIndex * 100); 
     carouselContainer.style.transform = `translateX(${offset}%)`;
 }
 
-// Función de autoplay para moverse automáticamente cada 3 segundos
+
 function autoCarousel() {
-    moveCarousel(1); // Mover al siguiente slide
-    setTimeout(autoCarousel, 1000); // Repetir cada 3 segundos
+    moveCarousel(1); 
+    setTimeout(autoCarousel, 1000); 
 }
 
-autoCarousel(); // Iniciar el autoplay
+autoCarousel(); 
 </script>
    
 </body>
