@@ -756,7 +756,7 @@ h1 {
 
 .fullscreen-image {
     width: 100%;
-    height: 100vh; 
+    height: 90%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -793,7 +793,6 @@ h1 {
     .fullscreen-image img {
         object-fit: contain;
     }
-
     
 }
 
