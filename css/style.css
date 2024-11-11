@@ -15564,16 +15564,15 @@ table.tableizer-table {
 .tableizer-table td:nth-child(2), .tableizer-table th:nth-child(2){
     
    
-	width: 400px; /* Ajusta el ancho como necesites */
+	width: 400px; 
 		
 	   
-	padding: 10px; /* Aumenta el espacio interno */
+	padding: 10px;
 	}
 
 
 /* Para cinta de estadisticas*/
 .marquee-container {
-	width: 100%; 
 	overflow: hidden; 
 	background-color: #fff; 
 	white-space: nowrap; 
@@ -15581,23 +15580,24 @@ table.tableizer-table {
 
 .marquee-text {
 	display: inline-block;
-	padding-left: 100%; 
-	animation: marquee 20s linear infinite; 
+	white-space: nowrap;
+	animation: marquee 25s linear infinite; 
 }
 .marquee-text img {
-	height: 150px; 
-	width: auto; 
-	margin-right: 10px; 
+	display: inline-block;
+    width: 140px; 
+    height: auto; 
+    margin-right: 25px; 
 }
 
 
 @keyframes marquee {
-	from {
-		transform: translateX(0%); 
-	}
-	to {
-		transform: translateX(-100%); 
-	}
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
 }
 
 
@@ -15776,7 +15776,6 @@ thead {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0;
 }
 .map-container {
 	flex: 1; 
@@ -15784,11 +15783,9 @@ thead {
 	width: 100%; 
 	max-width: 900px; 
 	height: 350px; 
-	margin: 0;
-	margin-left: 0;
 }
 .info-containermap {
-	padding: 20px; 
+	padding: 0px; 
 	background-color: white; 
 	width: 300px; 
 	font-family: 'Arial', sans-serif; 
@@ -15956,5 +15953,4 @@ button:hover {
 	text-align: center;
 	color: brown;
 }
-
 
