@@ -798,5 +798,84 @@ h1 {
 
 
 
-
+.hotel {
+    margin: 0;
+    height: 50vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff; 
+    
+  }
+.card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    justify-content: center;
+    
+  }
+  .card img {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 1000px; 
+    height: 300px;
+  }
+  .hotel-info {
+    margin-bottom: 10px;
+  }
+  .hotel-info h2 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .hotel-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  .rating {
+    color: #444;
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  .price-section {
+    background-color: #f0f9ff;
+    padding: 15px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    width: 1200px; 
+    height: 250px;
+  }
+  .price-section h3 {
+    font-size: 1.0em;
+    margin: 0;
+  }
+  .price-section p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  .price-section a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 10px;
+    color: #fff;
+    background-color: #0078d7;
+    text-decoration: none;
+    border-radius: 5px;
+   
+  }
+  .price-section a:hover {
+    background-color: #005bb5;
+  }
 
