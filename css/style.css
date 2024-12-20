@@ -15783,6 +15783,7 @@ thead {
 	width: 100%; 
 	max-width: 900px; 
 	height: 350px; 
+	margin-right: 20px;
 }
 .info-containermap {
 	padding: 0px; 
@@ -15850,7 +15851,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 120px; /* Ajusta según el tamaño deseado */
+    width: 120px; 
 }
 
 
