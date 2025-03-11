@@ -2945,7 +2945,7 @@ h4 + .rd-form {
 	font-weight: 500;
 	letter-spacing: .1em;
 	text-transform: uppercase;
-	color: #811345;
+	color: #829A9C;
 }
 
 .quote-classic-figure {
@@ -3042,7 +3042,7 @@ p + .quote-classic {
 }
 
 .context-dark .quote-classic-4 .quote-classic-author, .bg-gray-dark .quote-classic-4 .quote-classic-author, .bg-primary .quote-classic-4 .quote-classic-author {
-	color: #811345;
+	color: #829A9C;
 }
 
 .quote-modern-wrap {
@@ -15366,7 +15366,7 @@ text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #ac
 }
 /* Estilos para el botón */
 .custom-btn {
-    background-color: #6A0F49; 
+    background-color: #829A9C; 
     border: none; 
     color: white; 
     padding: 8px 8px; 
@@ -15387,7 +15387,7 @@ text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #ac
 
 /* Estilo al hacer clic */
 .custom-btn:active {
-    background-color: #6A0F49;
+    background-color: #496163;
     transform: scale(0.98); 
 }
 /* Estilos para el botón 2 */
@@ -15500,12 +15500,12 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #6A0F49;
+	background-color: #496163;
 	padding: 6px;
 	border-radius: 0px;
 	max-width: 1300px; 
 	height: 500px; 
-	background: linear-gradient(135deg,#6A0F49, #6A0F49); 
+	background: linear-gradient(135deg,#496163, #496163); 
 }
 
 .banner-text {
