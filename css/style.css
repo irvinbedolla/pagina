@@ -15243,10 +15243,10 @@ disabled look for disabled choices in the results dropdown
 	background-size:contain}
 
 #facebook-s
-{background-image:url("../images/Face.png");
+{background-image:url("../images/FC.png");
 	filter:grayscale(1);cursor:pointer}
 #twitter-s
-{background-image:url("../images/tw.png");
+{background-image:url("../images/X.png");
 	cursor:auto}
 #flecha
 {margin-top:8px;
@@ -15500,12 +15500,12 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #496163;
+	background-color: #A9ABAE;
 	padding: 6px;
 	border-radius: 0px;
 	max-width: 1300px; 
 	height: 500px; 
-	background: linear-gradient(135deg,#496163, #496163); 
+	background: linear-gradient(135deg,#A9ABAE, #A9ABAE); 
 }
 
 .banner-text {
@@ -15836,7 +15836,7 @@ thead {
 
    
 footer {
-    background-color: #6A0F49;
+    background-color: #D2D3D5;
     color: #ffffff;
     font-family: Arial, sans-serif;
     padding: 20px 0;
