@@ -1,34 +1,55 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html lang="en">
 
 <head>
 	<title>CCLMichoacán</title>
 	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport"
-		content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<link rel="icon" href="images/pagina_web/cclm.ico" type="image/x-icon">
 	<!-- Stylesheets-->
-	<link rel="stylesheet" type="text/css"
-		href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+	<script src='https://code.jquery.com/jquery-3.4.1.min.js' type='text/javascript'></script>
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/estilos.css">
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<!--[if lt IE 10]>
-    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-	<script src='https://code.jquery.com/jquery-3.4.1.min.js' type='text/javascript'></script>
-	<!-- <script
-    src="https://www.infomexsinaloa.org/accesibilidadweb/js_api.aspx?api_key=0C5BC1B7-E009-4CFC-A83A-AE8CD2324C85&tipo=header&aut=conciliacionlaboral.michoacan.gob.mx"
-    type="text/javascript"></script> -->
+	 
 	<style>
-		.nav{
-			background-color: #6A0F49;
+		.owl-carousel.owl-loaded{
+			display:block;
+		}
+		.owl-carousel {
+			display: none;
+			width: 100%;
+			-webkit-tap-highlight-color: transparent;
+			position: relative;
+			z-index: 1;
+		}
+		.owl-carousel .owl-item img {
+			display: block;
+			width: 100%;
+		}
+		.owl-carousel.owl-drag .owl-item {
+			touch-action: pan-y;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+		.owl-carousel .owl-item {
+			-webkit-backface-visibility: hidden;
+			float: left;
+			min-height: 1px;
+			position: relative;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-touch-callout: none;
+		}
+		.navbar{
+			background-color: #D2D3D5;
 		}
 	</style>
 </head>
@@ -36,215 +57,67 @@
 <body style="display: block;">
 
 	<h1 id="inicio"><b></b></h1>
-	<!-- <script
-      src="https://www.infomexsinaloa.org/accesibilidadweb/js_api.aspx?api_key=0C5BC1B7-E009-4CFC-A83A-AE8CD2324C85&tipo=body&aut=conciliacionlaboral.michoacan.gob.mx"
-      type="text/javascript"></script> -->
 	<div class="preloader">
 		<div class="wrapper-triangle">
 			<div class="pen"> </div>
 		</div>
 	</div>
-	
-	<!-- Page Header-->
+<!-- MENU -->
 	<header class="section page-header">
-		<div class="rd-navbar-wrap" style="height: 108.109px;">
-			<nav class="rd-navbar rd-navbar-modern rd-navbar-original rd-navbar-static rd-navbar--is-stuck"
-				data-layout="rd-navbar-fixed">
-				<div class="rd-navbar-inner-outer" style="margin-top: 20px; background-color: #D2D3D5">
-					<div class="rd-navbar-inner">
-						<div class="rd-navbar-panel">
-							<div class="rd-navbar-brand"><img src="images/logo_c.jpeg"></a></div>
-						</div>
-						<div class="rd-navbar-right rd-navbar-nav-wrap background-color:">
-							<div class="rd-navbar-main" style="margin-top: 20px; background-color: #D2D3D5">
-								<ul class="rd-navbar-nav">
-									<li class="rd-nav-item active"><a class="rd-nav-link" href="index.html"
-											style="color: #6A0F49;"><b>INICIO</b></a>
-									</li>
-									<li class="rd-nav-item"><a class="rd-nav-link" href="index.html#acerca"
-											style="color: #6A0F49;"><b>ACERCA
-											DE</b></a></li>
-									<li class="rd-nav-item"><a class="rd-nav-link" href="index.html#servicios"
-											style="color: #6A0F49;"><b>SERVICIOS</b></a></li>
-									<li class="rd-nav-item"><a class="rd-nav-link" href="index.html#contac"
-											style="color: #6A0F49;"><b>CONTACTO</b></a>
-									</li>
-									<li class="rd-nav-item">
-										<button class="custom-btn btn-concilo" onclick="window.open('https://siconcilio.cclmichoacan.gob.mx/', '_blank')">SI CONCILIO</button>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-open rd-navbar-fixed-element-1"
-							data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap"
-							data-multitoggle-isolate="data-multitoggle-isolate">
-							<div class="project-hamburger"><span class="project-hamburger-arrow"></span><span
-									class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
-							</div>
-						</div>
-						<div class="rd-navbar-project" style=" max-width: 260px; padding: 30px;">
-							<!-- Header Section -->
-							<div class="rd-navbar-project-header">
-								<h5 class="rd-navbar-project-title">MENU</h5>
-								<div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-close"
-									onclick="toggleMenu()">
-									<div class="project-close"><span></span><span></span></div>
-								</div>
-							</div>
-							<!-- Menu Section -->
-							<div class="rd-navbar-project-content rd-navbar-content hidden" id="menu">
-								<div class="menu-menu-1-container">
-
-									<div class="menu">
-										<nav id="menu-content" class="menu-content">
-											<ul>
-												<li><a href="index.html">Inicio</a></li>
-												<!--<li><a href="PlanT.html">Plan de Trabajo</a></li>-->
-												<li class="personal">
-													<button class="submenu-button personal1">Personal</button>
-													<ul class="submenu">
-														<li class="personal"><a href="PersonalD.html">Personal Directivo</a></li>
-														<li class="personal"><a href="DelegM.html">Delegación Morelia</a></li>
-														<li class="personal"><a href="DelegU.html">Delegación Uruapan</a></li>
-														<li class="personal"><a href="DelegZ.html">Delegación Zamora</a></li>
-														<li class="personal"><a href="DirectorioG.html">Directorio General</a></li>
-													</ul>
-												</li>
-												<li><a href="Organigrama.html">Organigrama</a></li>
-												<!--<li><a href="#">Mensaje del Director</a></li>-->
-												<li><a>Si Concilio</a></li>
-												<!--<li><a target="_blank" href="documetos/1er_Encuentro_Nacional_20231215.pdf" >1ro encuentro</a></li>-->
-												<li><a target="_blank" href="documetos/1er_Encuentro_Nacional_20231215.pdf" >1er encuentro</a></li>
-												<li><a target="_blank" href="https://cclmichoacan.gob.mx/encuentro_nacional_ccl/index.html" >2do encuentro</a></li>
-											</ul>
-										</nav>
-									</div>
-									<script src="js/menu.js"></script>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-			</nav>
-		</div>
-	</header>
-	<div class="container">
-		<br><br><br><br>
-  	</div>
-	  <div class="owl-carousel owl-theme owl-loaded owl-drag">
-		<div class="owl-stage-outer">
-			<div class="owl-stage" style="transform: translate3d(-1005px, 0px, 0px); transition: all; width: 315px;">
-				<div class="owl-item cloned" style="width: 275px; margin-right: 10px;">
-					<div>
-						<div classname="item">
-							<a href="https://sesesp.michoacan.gob.mx/" target="_blank">
-								<img src="images/Banner1/recep 2.jpeg" class="d-block w-100" alt="Tercera Imagen" loading="lazy">
-							</a>
-  					 	</div>
-					</div>
-				</div>
-				<div class="owl-item cloned" style="width: 275px; margin-right: 10px;">
-					<div>
-						<div classname="item">
-							<a href="https://refrendodigital.michoacan.gob.mx/" target="_blank">
-								<img src="images/Banner1/recep 4.jpeg" class="d-block w-100" alt="Tercera Imagen" loading="lazy">
-							</a>
-   						</div>
-					</div>
-				</div>
-				<div class="owl-item cloned" style="width: 275px; margin-right: 10px;">
-					<div>
-						<div classname="item">
-							<a href="https://mujer.michoacan.gob.mx/" target="_blank">
-								<img src="images/Banner1/recep6.jpeg" class="d-block w-100" alt="Primera Imagen" loading="lazy">
-							</a>
-   						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="owl-nav">
-			<button type="button" role="presentation" class="owl-prev"><i class="bi bi-chevron-left"></i></button>
-			<button type="button" role="presentation" class="owl-next"><i class="bi bi-chevron-right"></i></button>
-		</div>
-		<div class="owl-dots disabled"></div>
-		
-	</div>
-	<!--<div style="display: block;"> 
-		<div class="marquee-container" style="display: block; position: relative;">
-			<div class="marquee-text">
-				<img src="images/Estadisticas/" alt="">
-				<img src="images/Estadisticas/Atenciones.png" alt="Imagen 1">
-				<img src="images/Estadisticas/convenios.png" alt="Imagen 2">
-				<img src="images/Estadisticas/efectividad.png" alt="Imagen 3">
-				<img src="images/Estadisticas/montos.png" alt="Imagen 4">
-				<img src="images/Estadisticas/asesorías.png" alt="Imagen 5">
-				<img src="images/Estadisticas/Atenciones.png" alt="Imagen 1">
-				<img src="images/Estadisticas/convenios.png" alt="Imagen 2">
-				<img src="images/Estadisticas/efectividad.png" alt="Imagen 3">
-				<img src="images/Estadisticas/montos.png" alt="Imagen 4">
-				<img src="images/Estadisticas/asesorías.png" alt="Imagen 5">
-				<img src="images/Estadisticas/Atenciones.png" alt="Imagen 1">
-				<img src="images/Estadisticas/convenios.png" alt="Imagen 2">
-				<img src="images/Estadisticas/efectividad.png" alt="Imagen 3">
-				<img src="images/Estadisticas/montos.png" alt="Imagen 4">
-				<img src="images/Estadisticas/asesorías.png" alt="Imagen 5">
-				<img src="images/Estadisticas/Atenciones.png" alt="Imagen 1">
-				<img src="images/Estadisticas/convenios.png" alt="Imagen 2">
-				<img src="images/Estadisticas/efectividad.png" alt="Imagen 3">
-				<img src="images/Estadisticas/montos.png" alt="Imagen 4">
-				<img src="images/Estadisticas/asesorías.png" alt="Imagen 5">
-				<img src="images/Estadisticas/Atenciones.png" alt="Imagen 1">
-				<img src="images/Estadisticas/convenios.png" alt="Imagen 2">
-				<img src="images/Estadisticas/efectividad.png" alt="Imagen 3">
-				<img src="images/Estadisticas/montos.png" alt="Imagen 4">
-				<img src="images/Estadisticas/asesorías.png" alt="Imagen 5">
-				<img src="images/Estadisticas/Atenciones.png" alt="Imagen 1">
-				<img src="images/Estadisticas/convenios.png" alt="Imagen 2">
-				<img src="images/Estadisticas/efectividad.png" alt="Imagen 3">
-				<img src="images/Estadisticas/montos.png" alt="Imagen 4">
-				<img src="images/Estadisticas/asesorías.png" alt="Imagen 5">
-			</div>
-		</div>
-	</div>-->
-
-	
-	<div class="banner div-quienes-somos" style="max-width: none;">
-			<!-- Carrusel de Imágenes -->
-			<div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-				<div class="">
-					<div class="">
-						<img src="images/Banner1/portada1.png" class="d-block w-100" alt="Tercera Imagen">
-					</div>
-				</div>
-				<!-- Controles del Carrusel -->
-				<a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Siguiente</span>
-				</a>
-			</div>
-		<div class="banner-text div-text-quienes-somos">
-			<h1>QUIENES SOMOS</h1>
-			<br>
-			<p style="font-size: 14px; line-height: 20px; color:#ffff" >El centro de conciliación laboral es una instancia prejudicial; encargada de procurar la conciliación entre trabajadores y empleadores,
-				garante de vigilar que se respeten sus derechos humanos laborales, bajo los principios de legalidad, imparcialidad, neutralidad, flexibilidad, legalidad, equidad, buena fe, información, honestidad, y confidencialidad.
-			</p>
-			<button class="custom-btn2" onclick="location.href='Somos.html'">CONOCE MÁS</button>
-		</div>
-	</div>
-	    <br><br>
-		
-		<!--<div class="div1ro"> 
-			<button class="btn1ro" onclick="window.open('https://cclmichoacan.gob.mx/encuentro_nacional_ccl/index.html', '_blank')">
-				2do. Encuentro
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="rd-navbar-brand"><img src="images/Logos20230912.png" width="150" height="90"></a></div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-		</div>-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="index.html"
+						style="color:  #6A0F49;"><b>INICIO</b></a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="index.html#acerca"
+							style="color: #6A0F49;"><b>ACERCA DE</b></a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html#servicios"
+							style="color: #6A0F49;"><b>SERVICIOS</b></a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html#contac"
+							style="color:  #6A0F49;"><b>CONTACTO</b></a>
+					</li>
+					<li class="nav-item">
+						<button class="submenu-button personal1 nav-link" style="color: #6A0F49; background-color: #D2D3D5;"><b>MÁS..</b></button>
+						<ul class="submenu">
+							<li class="personal">
+								<button class="submenu-button personal1 nav-link" style="background-color: #D2D3D5;">Personal</button>
+								<ul class="submenu">
+									<li><a href="PersonalD.html" style="color: #6A0F49;">Personal Directivo</a></li>
+									<li><a href="DelegM.html" style="color: #6A0F49;">Delegación Morelia</a></li>
+									<li><a href="DelegU.html" style="color: #6A0F49;">Delegación Uruapan</a></li>
+									<li><a href="DelegZ.html" style="color: #6A0F49;">Delegación Zamora</a></li>
+									<li><a href="DirectorioG.html" style="color: #6A0F49;">Directorio General</a></li>
+								</ul>
+							</li>
+							<li><a href="Organigrama.html">Organigrama</a></li>
+							<li><a href="#">Mensaje del Director</a></li>
+							<li><a>Si Concilio</a></li>
+							<li><a target="_blank" href="documetos/1er_Encuentro_Nacional_20231215.pdf" >1ro encuentro</a></li>
+						</ul>
+					</li>
+				</ul>
+				<script src="js/menu.js"></script>
+			</div>				
+		</nav>	
+	</header>
+	<br><br>	
+	<!-- CARRUSEL-->
+
+	<div class="owl-carousel owl-theme">
+		<div class="item"><a href="https://sesesp.michoacan.gob.mx/" target="_blank">
+			<img src="images/carrusel/1.png" class="d-block w-100" alt="Tercera Imagen" loading="lazy">
+		</a></div>
+		<div class="item"><a href="https://sesesp.michoacan.gob.mx/" target="_blank">
+			<img src="images/carrusel/2.png" class="d-block w-100" alt="Tercera Imagen" loading="lazy">
+		</a></div>
+		
+	</div>
+
 		
 	 <br><br>
 	<div class="dj-banner" class="image-container second-image" style=" color: white; padding: 20px;">
