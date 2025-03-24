@@ -5424,7 +5424,7 @@ html [class*='section-'].section-top-0 {
 .context-dark h1,
 .bg-gray-dark h1,
 .bg-primary h1, .context-dark h2, .bg-gray-dark h2, .bg-primary h2, .context-dark h3, .bg-gray-dark h3, .bg-primary h3, .context-dark h4, .bg-gray-dark h4, .bg-primary h4, .context-dark h5, .bg-gray-dark h5, .bg-primary h5, .context-dark h6, .bg-gray-dark h6, .bg-primary h6, .context-dark [class^='heading-'], .bg-gray-dark [class^='heading-'], .bg-primary [class^='heading-'] {
-	color: #00000;
+	color: #000000;
 }
 
 .context-dark:not(.section-single):not(.form-default) .form-validation, .bg-gray-dark:not(.section-single):not(.form-default) .form-validation, .bg-primary:not(.section-single):not(.form-default) .form-validation,
@@ -5434,7 +5434,7 @@ html [class*='section-'].section-top-0 {
 .context-dark:not(.section-single):not(.form-default) .form-input,
 .bg-gray-dark:not(.section-single):not(.form-default) .form-input,
 .bg-primary:not(.section-single):not(.form-default) .form-input {
-	color: #00000;
+	color: #000000;
 }
 
 
@@ -11984,8 +11984,8 @@ h3 + .tabs-custom {
 	background-color: #ebebeb;
 	transition: .2s;
 }
-
-.owl-dot::before {
+/* BOTONES PARA CARRUSEL*/
+/*.owl-dot::before {
 	position: absolute;
 	content: '';
 	top: 50%;
@@ -11993,11 +11993,11 @@ h3 + .tabs-custom {
 	width: 6px;
 	height: 6px;
 	opacity: 0;
-	background: #811345;
+	background: #000000;
 	transform: translate3d(-50%, -50%, 0);
 	will-change: transform;
 	transition: all .2s ease;
-}
+}*/
 
 .owl-dot:only-child {
 	display: none;
