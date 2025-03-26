@@ -72,51 +72,46 @@
 	</div>
 <!-- MENU -->
 	<header class="section page-header">
-
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top justify-content-between">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 			<div class="rd-navbar-brand"><img src="images/Logos20230912.png" width="150" height="90"></a></div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  	<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html" style="color:  #6A0F49;"><b>INICIO</b></a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="index.html"
+						style="color:  #6A0F49;"><b>INICIO</b></a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="index.html#acerca"
-						style="color: #6A0F49;"><b>ACERCA DE</b></a></li>
+							style="color: #6A0F49;"><b>ACERCA DE</b></a></li>
 					<li class="nav-item"><a class="nav-link" href="index.html#servicios"
 							style="color: #6A0F49;"><b>SERVICIOS</b></a></li>
 					<li class="nav-item"><a class="nav-link" href="index.html#contac"
 							style="color:  #6A0F49;"><b>CONTACTO</b></a>
 					</li>
-
-					<li class="nav-item dropdown">
-						<a style="color: #6A0F49;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<b>MENU</b>
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="PersonalD.html">Personal Directivo</a>
-							<a class="dropdown-item" href="DelegM.html">Delegación Morelia</a>
-							<a class="dropdown-item" href="DelegU.html">Delegación Uruapan</a>
-							<a class="dropdown-item" href="DelegZ.html">Delegación Zamora</a>
-							<a class="dropdown-item" href="DirectorioG.html">Directorio General</a>
-						  	<a class="dropdown-item" href="Organigrama.html">Organigrama</a>
-						  	<div class="dropdown-divider"></div>
-							  	<a class="dropdown-item"  target="_blank" href="encuentro_nacional_ccl/index.html" >1ro encuentro</a>
-								<a class="dropdown-item"  target="_blank" href="encuentro_nacional_ccl2/index.html" >2ro encuentro</a>
-							</div>
-						</div>
+					<li class="nav-item">
+						<button class="submenu-button personal1 nav-link" style="color: #6A0F49; background-color: #D2D3D5;"><b>MÁS..</b></button>
+						<ul class="submenu">
+							<li class="personal">
+								<button class="submenu-button personal1 nav-link" style="background-color: #D2D3D5;">Personal</button>
+								<ul class="submenu">
+									<li><a href="PersonalD.html" style="color: #6A0F49;">Personal Directivo</a></li>
+									<li><a href="DelegM.html" style="color: #6A0F49;">Delegación Morelia</a></li>
+									<li><a href="DelegU.html" style="color: #6A0F49;">Delegación Uruapan</a></li>
+									<li><a href="DelegZ.html" style="color: #6A0F49;">Delegación Zamora</a></li>
+									<li><a href="DirectorioG.html" style="color: #6A0F49;">Directorio General</a></li>
+								</ul>
+							</li>
+							<li><a href="Organigrama.html">Organigrama</a></li>
+							<li><a href="#">Mensaje del Director</a></li>
+							<li><a>Si Concilio</a></li>
+							<li><a target="_blank" href="documetos/1er_Encuentro_Nacional_20231215.pdf" >1ro encuentro</a></li>
+						</ul>
 					</li>
 				</ul>
-			</div>
-		</nav>
-
-		  
-		
-
-
-
+				<script src="js/menu.js"></script>
+			</div>				
+		</nav>	
 	</header>
 	<br><br>
 
@@ -476,7 +471,7 @@
 	<script src="js/carrusel.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/carrusel.js"></script>
-
+	
 </body>
 
 </html>
