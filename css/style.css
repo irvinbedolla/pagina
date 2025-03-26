@@ -16008,4 +16008,10 @@ service-two {
 			  display: inline-block; }
 			.service-two.style-1 ul.client-service li .counter-content p {
 			  margin: 0;
-			  line-height: .5; }
+			  line-height: .5; 
+			}
+
+ul.client-service{
+	display: flex;
+	flex-wrap: wrap; 
+}
