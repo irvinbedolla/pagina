@@ -56,11 +56,18 @@
 			-webkit-touch-callout: none;
 		}
 		/*SERVICIOS*/
+		.btn:focus {
+			outline: none;
+			border: none;
+			box-shadow: none;
+		}
 		.btn-link{
 			font-weight: 400;
 			color:white;
 			font-weight: bold;
 			text-decoration: none;
+			border: #6A0F49;
+			border: none;
 		}
 		.btn-link:hover{
 			font-weight: 400;
@@ -79,7 +86,6 @@
 			background-color: #6A0F49;
 			/*border-bottom: 1px solid rgba(0, 0, 0, .125);*/
 		}
-		/*FIN SERVICIOS*/
 		.card p{
 			text-align: justify;
 		}
@@ -87,6 +93,7 @@
 			padding: 20px 5px;
 
 		}
+		/*FIN SERVICIOS*/
 		/*FONDO MENU*/
 		.navbar{
 			background-color: #D2D3D5;
@@ -105,6 +112,7 @@
 			color: #CEA845;
 			font-weight: bold;
 		}
+		
 		
 	</style>
 </head>
@@ -161,10 +169,10 @@
 	<br><br>
 
 	<!-- CARRUSEL-->
-	<div class="owl-carousel owl-theme">
-	  	<img src="images/carrusel/1.png" class="d-block w-100" alt="Tercera Imagen" loading="lazy">
-	  	<img src="images/carrusel/2.png" class="d-block w-100" alt="Tercera Imagen" loading="lazy">	
-	  	<img src="images/carrusel/4.png" class="d-block w-100" alt="Tercera Imagen" loading="lazy">	
+	<div class="owl-carousel owl-theme" id="carousel-imagenes">
+	  	<img src="images/carrusel/1.png" class="d-block w-100" alt="" loading="lazy">
+	  	<img src="images/carrusel/2.png" class="d-block w-100" alt="" loading="lazy">	
+	  	<img src="images/carrusel/4.png" class="d-block w-100" alt="" loading="lazy">	
 	</div>
 	
 	<!-- FIN CARRUSEL-->
@@ -216,7 +224,7 @@
 	<section class="section section-sm bg-default" style="background-color:#ffffff;">
 		<div class="container">
 			<div class="owl-carousel owl-style-11 dots-style-2" data-items="1" data-sm-items="1" data-lg-items="2"
-				data-xl-items="4" data-margin="30" data-dots="true" data-mouse-drag="true" data-rtl="true">
+				data-xl-items="4" data-margin="30" data-dots="true" data-mouse-drag="true" data-rtl="true" id="carousel-eventos">
 				<article class="box-icon-megan wow fadeInUp" data-wow-delay=".05s">
 					<div class="box-icon-megan-header">
 						<div class="box-icon-megan-icon linearicons-envelope"></div>
@@ -259,20 +267,19 @@
 	</section>
 	<!-- NUESTROS SERVICIOS-->
 	<h3 id="servicios"></h3> <br><br><br><br><br><br>
-	<h3 class="wow fadeInLeft" style="text-align: center ; font-family:Nutmeg, Sans-serif;">Nuestros servicios</h3>
-
-	<div id="accordion">
-		<div class="card-columns">
+	<h3 class="wow fadeInLeft" style="font-size: 30px; font-family: Nutmeg, Sans-serif; text-align: center;"><b>Nuestros servicios</b></h3>			
+	<div class="card-columns">
+		<div id="accordion">
 			<div class="card">
 				<div class="card-header" id="headingOne">
 					<h5 class="mb-0">
-						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 							SOLICITUD DE CONCILIACIÓN
 						</button>
 					</h5>
 				</div>
 		
-				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
 						Solicitud para citar a una persona física o moral para iniciar un procedimiento de conciliación prejudicial.
 					</div>
@@ -283,7 +290,7 @@
 				<div class="card-header" id="headingTwo">
 					<h5 class="mb-0">
 						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							SOLICITUD DE CONCILIACIÓN
+							ASESORÍAS
 						</button>
 					</h5>
 				</div>
@@ -586,6 +593,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- CONTACTO -->
 	<h3 id="contac"></h3>
 	<br><br><br><br><br><br>
 	<h3  class="wow fadeInLeft" style="font-size: 30px; font-family: Nutmeg, Sans-serif; text-align: center;"><b>Contacto</b></h3>
