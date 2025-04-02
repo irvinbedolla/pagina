@@ -1,86 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCLMichoacán</title>
-    <link rel="icon" href="images/cclm.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/fontello.css">
     
+    <title>CCLMichoacán</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<link rel="icon" href="images/pagina_web/cclm.ico" type="image/x-icon">
+
+	<!-- Stylesheets-->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+	<script src='https://code.jquery.com/jquery-3.4.1.min.js' type='text/javascript'></script>
+
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- CARRUSEL -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<style>
+		/*CARRUSEL*/
+		.owl-carousel.owl-loaded{
+			display:block;
+		}
+		.owl-carousel {
+			display: none;
+			width: 100%;
+			-webkit-tap-highlight-color: transparent;
+			position: relative;
+			z-index: 1;
+		}
+		.owl-carousel .owl-item img {
+			display: block;
+			width: 100%;
+		}
+		.owl-carousel.owl-drag .owl-item {
+			touch-action: pan-y;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+		.owl-carousel .owl-item {
+			-webkit-backface-visibility: hidden;
+			float: left;
+			min-height: 1px;
+			position: relative;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-touch-callout: none;
+		}
+		/*SERVICIOS*/
+		.btn:focus {
+			outline: none;
+			border: none;
+			box-shadow: none;
+		}
+		.btn-link{
+			font-weight: 400;
+			color:white;
+			font-weight: bold;
+			text-decoration: none;
+			border: #6A0F49;
+			border: none;
+		}
+		.btn-link:hover{
+			font-weight: 400;
+			color: #D2D3D5;
+			font-weight: bold;
+			text-decoration: none;
+			background-color: #6A0F49;
+		}
+		.btn:hover{
+			text-decoration: none;
+			
+		}
+		.card-header {
+			padding: .75rem 1.25rem;
+			margin-bottom: 0;
+			background-color: #6A0F49;
+			/*border-bottom: 1px solid rgba(0, 0, 0, .125);*/
+		}
+		.card p{
+			text-align: justify;
+		}
+		.card{
+			padding: 20px 5px;
+
+		}
+		.d-flex {
+			flex-wrap: wrap;
+		}
+		/*FIN SERVICIOS*/
+		/*FONDO MENU*/
+		.navbar{
+			background-color: #D2D3D5;
+		}
+		.dropdown-item{
+			color: #6A0F49;
+			font-weight: bold;
+		}
+    </style>
 </head>
 <body style="display: block;">
+    <h1 id="inicio"><b></b></h1>
+	<div class="preloader">
+		<div class="wrapper-triangle">
+			<div class="pen"> </div>
+		</div>
+	</div>
+<!-- MENU -->
     <header class="section page-header">
-        <div class="rd-navbar-wrap">
-            <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed">
-                <div class="rd-navbar-inner-outer" style="margin-top: 20px; background-color: #6A0F49">
-                    <div class="rd-navbar-inner">
-                        <div class="rd-navbar-panel">
-                            <div class="rd-navbar-brand"><img src="images/Logos20230912.png"></a></div>
-                        </div>
-                        <div class="rd-navbar-right rd-navbar-nav-wrap background-color:">
-                            <div class="rd-navbar-main" style="margin-top: 20px; background-color: #6A0F49">
-                                <ul class="rd-navbar-nav">
-                                    <li class="rd-nav-item active"><a class="rd-nav-link"style="color: #ffffff;" href="index.html">INICIO</a></li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" style="color: #ffffff;" href="index.html#acerca">ACERCA DE</a></li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" style="color: #ffffff;"href="index.html#servicios">SERVICIOS</a></li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" style="color: #ffffff;"href="#contac">CONTACTO</a></li>
-                                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top justify-content-between">
+            <div class="rd-navbar-brand"><img src="images/Logos1.png" width="320" height="190"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="color:  #6A0F49;"><b>INICIO</b></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#acerca"
+                        style="color: #6A0F49;"><b>ACERCA DE</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicios"
+                            style="color: #6A0F49;"><b>SERVICIOS</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contac"
+                            style="color:  #6A0F49;"><b>CONTACTO</b></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a style="color: #6A0F49;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>MENU</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="PersonalD.html">Personal Directivo</a>
+                            <a class="dropdown-item" href="DelegM.html">Delegación Morelia</a>
+                            <a class="dropdown-item" href="DelegU.html">Delegación Uruapan</a>
+                            <a class="dropdown-item" href="DelegZ.html">Delegación Zamora</a>
+                            <a class="dropdown-item" href="DirectorioG.html">Directorio General</a>
+                            <a class="dropdown-item" href="Organigrama.html">Organigrama</a>
+                            <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"  target="_blank" href="encuentro_nacional_ccl/index.html" >1ro encuentro</a>
+                                <a class="dropdown-item"  target="_blank" href="encuentro_nacional_ccl2/index.html" >2ro encuentro</a>
                             </div>
                         </div>
-                        <div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-open rd-navbar-fixed-element-1" data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate="data-multitoggle-isolate">
-                          <div class="project-hamburger"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span> </div>
-                        </div>
-                        <div class="rd-navbar-project" style=" max-width: 260px; padding: 10px;">
-                          <!-- Header Section -->
-                          <div class="rd-navbar-project-header">
-                              <h5 class="rd-navbar-project-title">MENU</h5>
-                              <div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-close" onclick="toggleMenu()">
-                                  <div class="project-close"><span></span><span></span></div>
-                              </div>
-                          </div>
-                           <!-- Menu Section -->
-                            <div class="rd-navbar-project-content rd-navbar-content hidden" id="menu">
-                              <div class="menu-menu-1-container">
-                                  <div class="menu">
-                                    <nav id="menu-content" class="menu-content">
-                                        <ul>
-                                            <li><a href="index.html">Inicio</a></li>
-                                            <li><a href="Somos.html">Nuestra Identidad</a></li>
-                                            <!--  <li><a href="Ejes.html">Ejes</a></li>-->
-                                            <!--<li><a href="PlanT.html">Plan de Trabajo</a></li>-->
-                                            <li class="personal">
-                                                <button class="submenu-button personal">Personal</button>
-                                                <ul class="submenu">
-                                                    <li class="personal"><a href="PersonalD.html">Personal Directivo</a></li>
-                                                    <li class="personal"><a href="DelegM.html">Delegación Morelia</a></li>
-                                                    <li class="personal"><a href="DelegU.html">Delegación Uruapan</a></li>
-                                                    <li class="personal"><a href="DelegZ.html">Delegación Zamora</a></li>
-                                                    <li class="personal"><a href="DirectorioG.html">Directorio General</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="Organigrama.html">Organigrama</a></li>
-                                            <li><a href="#">Mensaje del Director</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <script src="js/menu.js"></script>
-                              </div>
-                          </div>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </nav>
-        </div>
-        <br>
-    <br>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <br>
     <h1 class="wow fadeInLeft" style="text-align: center ; font-family: Nutmeg, Sans-serif;font-size: 20px;"> Dirección General</h1>
@@ -220,48 +293,37 @@
       
             <br><br>
     <!-- Footer -->
-    <footer>
+	<footer>
 		<div class="footer-container">
-			<div class="footer-logo">
-				<img src="images/templatemo_logo.png" alt="Logo Michoacán">
+			<div class="footer-logos">
+				<img src="images/MichMejor.png" alt="Logo Michoacán" width="" height="">
 			</div>
 			<div class="footer-socials">
-				<a href="
-				https://www.facebook.com/share/p/5ZkRpPXkcLU5f22B/?mibextid=QwDbR1" class="social-icon" target="_blank"><img src="images/bface.png" ></a>
-				<a href="https://www.instagram.com/p/DAHE5ccyEuf/?igsh=MTZoOTFzdjJ6MzZ4cg==" class="social-icon" target="_blank"><img src="images/binsta.png"  ></i></a>
-				<a href="https://x.com/cclmichoacan/status/1836850990471074230?s=46&t=b2fwr9Vcf8iWYVavE8GJgA" target="_blank" class="social-icon"><img src="images/btuiter6.png"  ></i></a>
-				
+				<a href="https://www.facebook.com/conciliacionlaboralmich/?locale=es_LA" class="social-icon" target="_blank"><img src="images/FB1.png"></a>
+				<a href="https://www.instagram.com/cclmichoacan/" class="social-icon" target="_blank"><img src="images/IG1.png"></i></a>
+				<a href="https://x.com/cclmichoacan?s=21" target="_blank" class="social-icon"><img src="images/X1.png"></i></a>
+				<a href="https://www.tiktok.com/@cclmichoacan0?_t=ZM-8uooi2eSI1V&_r=1" target="_blank" class="social-icon"><img src="images/TK1.png"></i></a>
 			</div>
-			<div class="footer-hashtag">
-				#GobiernoDeMichoacán
-			</div>
+			<div class="footer-logo">
+				<img src="images/CCLInferior.png" alt="Logo Michoacán">
+			</div>				
 		</div>
 		<div class="footer-bottom">
-			© Desarrollado por Comunicación Social | Gobierno del Estado de Michoacán 2024
+			© Desarrollado por CCL Michoacán | Gobierno del Estado de Michoacán 2024
 		</div>
 		<div> <a href="documentos/AvisoPrivacidad/Aviso_de_Privacidad_Simplificado.pdf" target="_blank"
 			style="color:#ffff;">Aviso de privacidad</a> </div>
 	</footer>
-    <!-- Javascript
-    <script>
-		window.addEventListener('mouseover', initLandbot, { once: true });
-		window.addEventListener('touchstart', initLandbot, { once: true });
-		var myLandbot;
-		function initLandbot() {
-		  if (!myLandbot) {
-			var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-			s.addEventListener('load', function() {
-			  var myLandbot = new Landbot.Livechat({
-				configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2592631-YDHMJMJEZHL57VU4/index.json',
-			  });
-			});
-			s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-			var x = document.getElementsByTagName('script')[0];
-			x.parentNode.insertBefore(s, x);
-		  }
-		}
-		</script>-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+	
+
+	<div class="snackbars" id="form-output-global"></div>
+
+	<!-- Javascript-->
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/core.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/carrusel.js"></script>
 </body>
 </html>

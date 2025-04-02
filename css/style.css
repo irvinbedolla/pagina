@@ -15854,7 +15854,9 @@ footer {
     width: 80px; 
 }
 
-
+.footer-logos{
+	width: 160px;
+}
 
 .footer-bottom {
     margin-top: 20px;
