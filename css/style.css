@@ -15854,8 +15854,13 @@ footer {
     width: 80px; 
 }
 
+.footer-socials {
+	align-items: center;
+}
+
 .footer-logos{
 	width: 160px;
+	display: block;
 }
 
 .footer-bottom {
@@ -15865,7 +15870,6 @@ footer {
 
 .social-icon img {
     width: 30px; 
-    height: auto; 
 }
 
 .entry-title {
