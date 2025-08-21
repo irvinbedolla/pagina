@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2do. Encuentro Nacional</title>
+    <link rel="icon" href="images/micrositio/cclm.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    
+</head>
+<body style="display: block;">
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                
+                <div class="logo">
+                    <img src="images/micrositio/logo final.png" alt="Logo" />
+                </div>
+    
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Documentos/programa.pdf" target="_blank">Programa</a></li>
+                    <li><a href="Foros U.html">Foros</a></li>
+                    <li><a href="Documentos/Memorias 1ro encuentro.pdf" target="_blank">Memorias 1ro encuentro</a></li>
+                    <li><a href="Documentos/programa.pdf" target="_blank">Memorias 2ro encuentro</a></li>
+                </ul>
+                
+    
+               
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+     <script>
+        function toggleSubmenu(event) {
+            event.preventDefault(); 
+            const submenu = document.getElementById("submenu-foros");
+            if (submenu.style.display === "none" || submenu.style.display === "") {
+                submenu.style.display = "block"; 
+            } else {
+                submenu.style.display = "none"; 
+            }
+        }
+    </script>
+    
+<div style="background-image: url('images/micrositio/Recurso\ 2.png');">
+    <br><br><br>
+      
+<!--    
+<div class="fullscreen-image">
+    <img src="images/slider/Ya-casi.jpg" alt="Imagen 1" class="slider-img">
+    <img src="images/slider2/img1.JPG" alt="Imagen 2" class="slider-img" style="display:none;">
+    <img src="images/slider2/baner1.png" alt="Imagen 3" class="slider-img" style="display:none;">
+    <img src="images/slider2/img2.JPG" alt="Imagen 3" class="slider-img" style="display:none;">
+    <img src="images/slider2/baner2.png" alt="Imagen 2" class="slider-img" style="display:none;">
+    <img src="images/slider2/img7.jpg" alt="Imagen 3" class="slider-img" style="display:none;">
+</div>
+-->
+
+<script> images = document.querySelectorAll('.fullscreen-image .slider-img');
+    let currentIndex = 0;
+    function changeImage() {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = 'block';
+    }
+
+    setInterval(changeImage, 2000);
+    </script>
+    <script> function changeImage() {
+        images[currentIndex].classList.remove('active');  
+        currentIndex = (currentIndex + 1) % images.length; 
+        images[currentIndex].classList.add('active');     
+    }
+</script>
+
+
+    <div class="fbase">
+       <br><br><br>
+    
+    <div id="contador">
+        <div>
+            <span id="dias">0</span>
+            Días
+        </div>
+        <div class="separador">:</div> 
+        <div>
+            <span id="horas">0</span>
+            Horas
+        </div>
+        <div class="separador">:</div> 
+        <div>
+            <span id="minutos">0</span>
+            Minutos
+        </div>
+        <div class="separador">:</div> 
+        <div>
+            <span id="segundos">0</span>
+            Segundos
+        </div>
+    </div>
+    
+    <br><br><br><br>
+    <div class="container">
+        <!-- Sección del mapa -->
+        <div class="map-section">
+          <h1 class="text-section">Ubicación</h1>
+          <p class="text-section">Universidad Michoacana de San Nicolas de Hidalgo</p>
+      
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7983618430173!2d-101.1905686!3d19.7029664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e5448a4badd%3A0x52c062cf7566fda!2sH.%20Congreso%20del%20Estado%20de%20Michoac%C3%A1n%20de%20Ocampo!5e0!3m2!1ses!2smx!4v1696958123456!5m2!1ses!2smx"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      
+        <!-- Sección derecha con foto y botón -->
+        <div class="right-section">
+          <div class="photo-box">
+            <img class="qrgen" src="images/qrgeneral.png"  />
+          </div>
+          <a href="https://forms.gle/17ee5b5wok5ehyZX7" target="_blank" class="styled-button">Regístrate aquí</a> </div>
+      </div>
+      <br><br><br><br>
+    <div class="contenidos"><br>
+        <div class="content-wrapper">
+            <div class="image-section">
+                <div class="campimg">
+                    <img class="image-editor" src="images/tercer.jpg" alt="Cartel" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="hotel">
+    <div class="card">
+        <img src="images/hotel-casino-morelia.jpg" alt="Vista Express Morelia">
+        <div class="card-content">
+          <div class="hotel-info">
+            <h2>HOTEL CASINO MORELIA</h2>
+            <p>Portal Hidalgo 229, Centro histórico de Morelia, 58000 Morelia, Mich.</p>
+            <p class="rating">Tel: 443 313 1328</p>
+            <p class="rating">Email: reservaciones@hotelcasino.com.mx </p>
+          </div>
+        </div>
+        <div class="price-section">
+        <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
+          <h3>2DO ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
+          <a href="https://www.hotelcasino.com.mx/" target="_blank">Consultar</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <br>
+    <div class="button-container">
+        <button onclick="mostrarTexto('Reflexionar acerca del impacto del Nuevo Sistema de Justicia Laboral en el país mediante la conciliación, la justicia laboral y los derechos humanos laborales, realizando el primer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
+        >Objetivo</button>
+        <button onclick="mostrarTexto('Convocar e informar del impacto del Nuevo Sistema de Justicia Laboral, que a partir de la reforma constitucional publicada en el Diario Oficial de la Federación del 24 de febrero, en el que se adecuaron las fracciones XX y XX Bis apartado A del artículo 123 de la Constitución Política de los Estados Unidos Mexicanos. De esta manera, nacieron nuevas instituciones en materia laboral con la finalidad de conocer las dos etapas del nuevo modelo, por un lado, se encuentran los Centros de Conciliación Laboral y, por otro los Tribunales Laborales, adscritos a los poderes judiciales, es por esta razón que resulta necesario organizar y celebrar el primer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
+        >Misión</button>
+        <button onclick="mostrarTexto('Promover la participación de los protagonistas del Nuevo Sistema de Justicia Laboral, como son los Centros de Conciliación, Tribunales Laborales, académicos, operadores jurídicos, estudiantes y público en general, a través de espacios de reflexión, conferencias magistrales, conversatorios y mesas de trabajo donde se puedan exponer ideas, experiencias y perspectivas acerca del tema, dando como resultado un libro de memorias donde se destaque la importancia, académica, social y cultural de Nuevo Sistema de Justicia Laboral en el país.')"
+        >Visión</button>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <script>
+        function mostrarTexto(texto) {
+            const messageDiv = document.getElementById("message");
+            if (messageDiv.textContent === texto && messageDiv.style.visibility === 'visible') {
+                messageDiv.style.visibility = 'hidden'; 
+            } else {
+                messageDiv.textContent = texto; 
+                messageDiv.style.visibility = 'visible'; 
+            }
+        }
+    </script>
+      
+    <div id="templatemo_main" style="text-align: center;" >
+
+        <video width="1000"  class="video" height="550" controls poster="images/Videos/imgvideo.jpeg" >
+            <source src="images/Videos/video2.mp4" type="Video/mp4">
+         </video>
+    </div>
+
+  </div>
+</div>
+      <footer>
+		<div class="footer-container">
+			<div class="footer-logo">
+				<img src="images/MICHOACAN ES MEJOR.png" alt="Logo Michoacán">
+			</div>
+			<div class="footer-socials">
+				<a href="
+				https://www.facebook.com/share/p/5ZkRpPXkcLU5f22B/?mibextid=QwDbR1" class="social-icon" target="_blank"><img src="images/bface.png" ></a>
+				<a href="https://www.instagram.com/p/DAHE5ccyEuf/?igsh=MTZoOTFzdjJ6MzZ4cg==" class="social-icon" target="_blank"><img src="images/binsta.png"  ></i></a>
+				<a href="https://x.com/cclmichoacan/status/1836850990471074230?s=46&t=b2fwr9Vcf8iWYVavE8GJgA" target="_blank" class="social-icon"><img src="images/btuiter6.png"  ></i></a>
+				
+			</div>
+            
+			<div class="footer-hashtag">
+				#GobiernoDeMichoacán
+			</div>
+		</div>
+		<div class="footer-bottom">
+			© Desarrollado por Comunicación Social | Gobierno del Estado de Michoacán 2024
+		</div>
+		<div> <a href="documentos/AvisoPrivacidad/Aviso_de_Privacidad_Simplificado.pdf" target="_blank"
+			style="color:#ffff;">Aviso de privacidad</a> </div>
+	</footer>
+     
+    <!-- Javascript-->
+    <script>
+    const fechaObjetivo = new Date("Oct 30, 2025 09:00:00").getTime();
+
+const actualizaContador = () => {
+    const ahora = new Date().getTime();
+    const diferencia = fechaObjetivo - ahora;
+
+    // Calcular 
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    // Mostrar
+    document.getElementById("dias").textContent = dias;
+    document.getElementById("horas").textContent = horas;
+    document.getElementById("minutos").textContent = minutos;
+    document.getElementById("segundos").textContent = segundos;
+
+    
+    if (diferencia < 0) {
+        clearInterval(intervalo);
+        document.getElementById("contador").innerHTML = "¡El evento ha comenzado!";
+    }
+};
+
+
+// Actualizar 
+const intervalo = setInterval(actualizaContador, 1000);
+</script>
+
+<script>
+let slideIndex = 0;
+
+function moveCarousel(n) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+    const carouselContainer = document.querySelector('.carousel-container');
+    
+    slideIndex += n;
+
+    if (slideIndex >= totalSlides) {
+        slideIndex = 0; 
+    }
+    if (slideIndex < 0) {
+        slideIndex = totalSlides - 1; 
+    }
+
+    const offset = -(slideIndex * 100); 
+    carouselContainer.style.transform = `translateX(${offset}%)`;
+}
+
+
+function autoCarousel() {
+    moveCarousel(1); 
+    setTimeout(autoCarousel, 1000); 
+}
+
+autoCarousel(); 
+</script>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
