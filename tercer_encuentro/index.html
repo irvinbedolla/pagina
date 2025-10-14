@@ -11,22 +11,55 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
-    
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;     
+            align-items: flex-start;      
+            padding-top: 100px;       
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        button {
+            background-color: #CEA845;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        button:hover {
+            background-color: #CEA845;
+        }
+    </style>
 </head>
 <body style="display: block;">
     <header class="header">
         <nav class="navbar" style="background-image: url('images/micrositio/Barra\ 3er\ Encuentro.png'); height: 100%;">
             <div class="navbar-container">
                 <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Documentos/programa.pdf" target="_blank">Programa</a></li>
-                    <li><a href="#">Foros</a></li>
-                    <li><a href="Documentos/Memorias 1ro encuentro.pdf" target="_blank">Memorias 1ro encuentro</a></li>
-                    <li><a href="../encuentro_nacional_ccl2/" target="_blank">Memorias 2ro encuentro</a></li>
+                    <li><a href="Documentos/programa.pdf"     target="_blank">Programa</a></li>
+                    <li><a href="Documentos/reglamento.pdf"   target="_blank">Reglamento</a></li>
+                    <li><a href="Documentos/Invitación 3er Encuentro.pdf"   target="_blank">Invitación</a></li>
+                    <li><a href="Documentos/PROYECTO_EJECUTIVO.pdf"   target="_blank">Proyecto</a></li>
+                    <li><a href="../encuentro_nacional_ccl/"  target="_blank">1ro encuentro</a>
+                        <a href="../encuentro_nacional_ccl2/" target="_blank">2ro encuentro</a>
+                    </li>
                 </ul>
-                
-    
-               
                 <div class="hamburger" onclick="toggleMenu()">☰</div>
             </div>
         </nav>
@@ -37,7 +70,7 @@
             navLinks.classList.toggle('active');
         }
     </script>
-     <script>
+    <script>
         function toggleSubmenu(event) {
             event.preventDefault(); 
             const submenu = document.getElementById("submenu-foros");
@@ -72,16 +105,16 @@
     }
 
     setInterval(changeImage, 2000);
-    </script>
-    <script> function changeImage() {
+</script>
+<script> 
+    function changeImage() {
         images[currentIndex].classList.remove('active');  
         currentIndex = (currentIndex + 1) % images.length; 
         images[currentIndex].classList.add('active');     
     }
 </script>
 
-
-    <div class="fbase">
+<div class="fbase">
        <br><br><br>
     
     <div id="contador">
@@ -111,19 +144,19 @@
         <!-- Sección del mapa -->
         <div class="map-section">
           <h1 class="text-section">Ubicación</h1>
-          <p class="text-section">Universidad Michoacana de San Nicolas de Hidalgo</p>
+          <p class="text-section">Casa Michoacán</p>
       
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4456.034548135547!2d-101.2032763!3d19.6883768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0dd4d48898c7%3A0x2eb322e9e244e518!2sUniversidad%20Michoacana%20de%20San%20Nicol%C3%A1s%20de%20Hidalgo!5e1!3m2!1ses-419!2smx!4v1755801595402!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120218.30071024854!2d-101.3463630566406!3d19.677602399999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0db58cda15cb%3A0x7808273fe4e3640b!2sCasa%20Michoac%C3%A1n!5e0!3m2!1sen!2smx!4v1756335229400!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       
         <!-- Sección derecha con foto y botón -->
         <div class="right-section">
           <div class="photo-box">
-            <img class="qrgen" src="images/qrgeneral.png"  />
+            <img class="qrgen" src="images/registro 3er encuentro.png"  />
           </div>
-          <a href="https://forms.gle/HKucX9rTxHJ4FMY47" target="_blank" class="styled-button">Regístrate aquí</a> </div>
+          <a href="https://siconcilio.cclmichoacan.gob.mx/registro_tercer_encuentro" target="_blank" class="styled-button">Regístrate aquí</a> </div>
       </div>
       <br><br><br><br>
     <div class="contenidos"><br>
@@ -138,34 +171,86 @@
     <br>
 
     <div class="hotel">
-    <div class="card">
-        <img src="images/hotel-casino-morelia.jpg" alt="Vista Express Morelia">
-        <div class="card-content">
-          <div class="hotel-info">
-            <h2>HOTEL CASINO MORELIA</h2>
-            <p>Portal Hidalgo 229, Centro histórico de Morelia, 58000 Morelia, Mich.</p>
-            <p class="rating">Tel: 443 313 1328</p>
-            <p class="rating">Email: reservaciones@hotelcasino.com.mx </p>
-          </div>
+        <div class="card">
+            <img src="images/hotel.png" alt="Vista Express Morelia">
+            <div class="card-content">
+            <div class="hotel-info">
+                <h2>HOLIDAY INN EXPRESS CENTRO HISTÓRICO</h2>
+                <p>Portal Hidalgo 245 58000 Morelia, Mich.</p>
+                <p class="rating">Tel: 443 310 8400</p>
+                <p class="rating">Email: holidayinnexpress<br>moreliacentro@gosahoteles.com</p>
+            </div>
+            </div>
+            <div class="price-section">
+                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
+                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
+                <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a>
+            </div>
         </div>
-        <div class="price-section">
-        <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
-          <h3>2DO ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
-          <a href="https://www.hotelcasino.com.mx/" target="_blank">Consultar</a>
+        <div class="card">
+            <img src="images/hotel_camelinas.jpg" alt="Vista Express Morelia">
+            <div class="card-content">
+            <div class="hotel-info">
+                <h2>HOLIDAY INN CAMELINAS</h2>
+                <p>Periférico Paseo de la Republica 3466 sector nueva España 58295 Morelia, Mich.</p>
+                <p class="rating">Tel: 443 314 3111</p>
+                <p class="rating">Email: recepcionhinnmorelia@citelis.mx</p>
+            </div>
+            </div>
+            <div class="price-section">
+                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
+                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
+                <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a>
+            </div>
         </div>
-      </div>
     </div>
-
-
-
-    <br>
+    <div class="hotel">
+        <div class="card">
+            <img src="images/Hotel_horizon.png" alt="Vista Express Morelia">
+            <div class="card-content">
+            <div class="hotel-info">
+                <h2>HOTEL HORIZON</h2>
+                <p>Periférico Paseo de la Republica 3325 Pob. Ocolusen 58270 Morelia, Mich.</p>
+                <p class="rating">Tel: 443 113 1500</p>
+                <p class="rating">Email: recepcion@horizon.mx </p>
+            </div>
+            </div>
+            <div class="price-section">
+                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
+                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
+                <a href="https://www.horizon.mx/es/index.html" target="_blank">Consultar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/Hotel_diana.png" alt="Vista Express Morelia">
+            <div class="card-content">
+            <div class="hotel-info">
+                <h2>HOTEL DIANA DEL BOSQUE</h2>
+                <p>Rafael Carrillo 144 Colonia Cuahtemoc, 58020 Morelia, Mich.</p>
+                <p class="rating">Tel: 443 317 8454</p>
+                <p class="rating">Email: reservaciones@dianadelbosque.com </p>
+            </div>
+            </div>
+            <div class="price-section">
+                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
+                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
+                <a href="http://www.hoteldianadelbosque.com/" target="_blank">Consultar</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button>
+            <b><a href="Documentos/Tarifas 3er encuentro octubre 2025.pdf" target="_blank">TARIFAS</a></b>
+        </button>
+    </div><br>
     <div class="button-container">
-        <button onclick="mostrarTexto('Reflexionar acerca del impacto del Nuevo Sistema de Justicia Laboral en el país mediante la conciliación, la justicia laboral y los derechos humanos laborales, realizando el primer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
-        >Objetivo</button>
-        <button onclick="mostrarTexto('Convocar e informar del impacto del Nuevo Sistema de Justicia Laboral, que a partir de la reforma constitucional publicada en el Diario Oficial de la Federación del 24 de febrero, en el que se adecuaron las fracciones XX y XX Bis apartado A del artículo 123 de la Constitución Política de los Estados Unidos Mexicanos. De esta manera, nacieron nuevas instituciones en materia laboral con la finalidad de conocer las dos etapas del nuevo modelo, por un lado, se encuentran los Centros de Conciliación Laboral y, por otro los Tribunales Laborales, adscritos a los poderes judiciales, es por esta razón que resulta necesario organizar y celebrar el primer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
+        
+        <button onclick="mostrarTexto('Informar el impacto de la Reforma Constitucional publicada en el Diario Oficial de la Federación el dia 24 de febrero del año 2017, dando paso al Actual Sistema de Justicia Laboral, con la creación de nuevas instituciones en materia laboral encargadas de conocer, por un lado, los Centros de Conciliación Laboral y por otro, los Tribunales Laborales, adscritos a los Poderes Judiciales; por esta razón resulta necesario organizar y celebrar el Tercer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
         >Misión</button>
-        <button onclick="mostrarTexto('Promover la participación de los protagonistas del Nuevo Sistema de Justicia Laboral, como son los Centros de Conciliación, Tribunales Laborales, académicos, operadores jurídicos, estudiantes y público en general, a través de espacios de reflexión, conferencias magistrales, conversatorios y mesas de trabajo donde se puedan exponer ideas, experiencias y perspectivas acerca del tema, dando como resultado un libro de memorias donde se destaque la importancia, académica, social y cultural de Nuevo Sistema de Justicia Laboral en el país.')"
+        <button onclick="mostrarTexto('Promover la participación de los protagonistas del Actual Sistema de Justicia Laboral, como personal de los Centros de Conciliación, de los Tribunales Laborales, Académicos, Operadores Jurídicos, Estudiantes y Público en general, a través de espacios de reflexión, conferencias magistrales y conversatorios, con la finalidad de exponer ideas, experiencias y perspectivas acerca del tema, dando como resultado un libro de memorias donde se destaque la importancia, académica, social y cultural de Nuestro Actual Sistema de Justicia Laboral en el país.')"
         >Visión</button>
+        <button onclick="mostrarTexto('Reflexionar y Retroalimentar acerca del impacto del Actual Sistema de Justicia Laboral en el país, sobre temas relacionados con la Conciliación, la Justicia Laboral y los Derechos Humanos Laborales, con la celebración del Tercer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán de Ocampo.')"
+        >Objetivo</button>
     </div>
 
     <div class="message" id="message"></div>
@@ -183,13 +268,12 @@
     </script>
       
     <div id="templatemo_main" style="text-align: center;" >
-
         <video width="1000"  class="video" height="550" controls poster="images/Videos/imgvideo.jpeg" >
-            <source src="images/Videos/video2.mp4" type="Video/mp4">
+            <source src="images/Videos/video_final.mp4" type="Video/mp4">
          </video>
     </div>
 
-  </div>
+</div>
 </div>
       <footer>
 		<div class="footer-container">
@@ -279,11 +363,3 @@ autoCarousel();
    
 </body>
 </html>
-
-
-
-
-
-
-
-
