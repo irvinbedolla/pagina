@@ -39,7 +39,6 @@
             background-color: #CEA845;
         }
         /*Programa de actividades*/
-
         section {
             justify-content: center;
         }
@@ -84,7 +83,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* CONTENIDO DE PESTAÑAS */
         .tab-content {
         display: none;
         text-align: center;
@@ -101,7 +99,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
-        /* RESPONSIVE */
         @media screen and (max-width: 768px) {
             .tabs-menu {
                 flex-direction: column;
@@ -115,6 +112,21 @@
 
             .container {
                 padding: 20px;
+            }
+        }
+        /*Hoteles*/
+        @media (max-width: 600px) {
+            .contenedor-responsivo {
+                /* Cambia a disposición vertical: Imagen arriba, texto abajo */
+                flex-direction: column;
+                text-align: center; /* Opcional: Centra el texto en móvil */
+            }
+
+            .contenedor-responsivo img {
+                /* La imagen ocupa más espacio en móvil para ser visible */
+                max-width: 80%;
+                margin-right: 0;
+                margin-bottom: 15px;
             }
         }
     </style>
@@ -214,6 +226,7 @@
         <div class="tabs-menu">
             <button class="tab-button active" data-tab="jueves">Jueves 30/10</button>
             <button class="tab-button" data-tab="viernes">Viernes 31/10</button>
+            <button class="tab-button" data-tab="iltras">Iltras</button>
         </div>
         <div class="container">
             <div class="tab-content active" id="jueves">
@@ -221,6 +234,16 @@
             </div>
             <div class="tab-content" id="viernes">
                 <img src="images/viernes31.png" alt="Programa Viernes 31 de Octubre" loading="lazy" />
+            </div>
+            <div class="tab-content" id="iltras">
+               <img src="images/iltras1.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras2.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras3.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras4.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras5.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras6.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras7.png" alt="Iltras" loading="lazy" />
+               <img src="images/iltras8.png" alt="Iltras" loading="lazy" />
             </div>
         </div>
     </section>
@@ -254,75 +277,60 @@
         </div>
     </div>
     <br>
-   
-    <div class="hotel">
-        <div class="card">
-            <img src="images/hotel.png" alt="Vista Express Morelia">
-            <div class="card-content">
-            <div class="hotel-info">
-                <h2>HOLIDAY INN EXPRESS CENTRO HISTÓRICO</h2>
-                <p>Portal Hidalgo 245 58000 Morelia, Mich.</p>
-                <p class="rating">Tel: 443 310 8400</p>
-                <p class="rating">Email: holidayinnexpress<br>moreliacentro@gosahoteles.com</p>
-            </div>
-            </div>
-            <div class="price-section">
-                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
-                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
-                <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/hotel_camelinas.jpg" alt="Vista Express Morelia">
-            <div class="card-content">
-            <div class="hotel-info">
-                <h2>HOLIDAY INN CAMELINAS</h2>
-                <p>Periférico Paseo de la Republica 3466 sector nueva España 58295 Morelia, Mich.</p>
-                <p class="rating">Tel: 443 314 3111</p>
-                <p class="rating">Email: recepcionhinnmorelia@citelis.mx</p>
-            </div>
-            </div>
-            <div class="price-section">
+    <div class="contenedor-responsivo">
+        <img src="images/Hotel_horizon.png" alt="Vista Express Morelia">
+        <div class="contenido-texto">
+            <h3>HOLIDAY INN EXPRESS CENTRO HISTÓRICO</h3>
+            <p>Portal Hidalgo 245 58000 Morelia, Mich.</p>
+            <p class="rating">Tel: 443 310 8400</p>
+            <p class="rating">Email: holidayinnexpress<br>moreliacentro@gosahoteles.com</p>
+            <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
+            <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
+            <button><a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a></button><br>
+        </div><br>
+        <img src="images/hotel_camelinas.jpg" alt="Vista Express Morelia">
+            <div class="contenido-texto">
+        
+                    <h2>HOLIDAY INN CAMELINAS</h2>
+                    <p>Periférico Paseo de la Republica 3466 sector nueva España 58295 Morelia, Mich.</p>
+                    <p class="rating">Tel: 443 314 3111</p>
+                    <p class="rating">Email: recepcionhinnmorelia@citelis.mx</p>
+               
+
                 <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
                 <h3>3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
-                <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a>
-            </div>
-        </div>
-    </div>
-    <div class="hotel">
-        <div class="card">
+                <button><a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a></button><br>
+            </div><br>
             <img src="images/Hotel_horizon.png" alt="Vista Express Morelia">
-            <div class="card-content">
-            <div class="hotel-info">
-                <h2>HOTEL HORIZON</h2>
-                <p>Periférico Paseo de la Republica 3325 Pob. Ocolusen 58270 Morelia, Mich.</p>
-                <p class="rating">Tel: 443 113 1500</p>
-                <p class="rating">Email: recepcion@horizon.mx </p>
-            </div>
-            </div>
-            <div class="price-section">
+            <div class="contenido-texto">
+         
+                    <h2>HOTEL HORIZON</h2>
+                    <p>Periférico Paseo de la Republica 3325 Pob. Ocolusen 58270 Morelia, Mich.</p>
+                    <p class="rating">Tel: 443 113 1500</p>
+                    <p class="rating">Email: recepcion@horizon.mx </p>
+        
+
+          
                 <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
                 <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
-                <a href="https://www.horizon.mx/es/index.html" target="_blank">Consultar</a>
-            </div>
-        </div>
-        <div class="card">
+                <button><a href="https://www.horizon.mx/es/index.html" target="_blank">Consultar</a></button><br>
+            </div><br>
+      
+
             <img src="images/Hotel_diana.png" alt="Vista Express Morelia">
-            <div class="card-content">
-            <div class="hotel-info">
-                <h2>HOTEL DIANA DEL BOSQUE</h2>
-                <p>Rafael Carrillo 144 Colonia Cuahtemoc, 58020 Morelia, Mich.</p>
-                <p class="rating">Tel: 443 317 8454</p>
-                <p class="rating">Email: reservaciones@dianadelbosque.com </p>
-            </div>
-            </div>
-            <div class="price-section">
+            <div class="contenido-texto">
+          
+                    <h2>HOTEL DIANA DEL BOSQUE</h2>
+                    <p>Rafael Carrillo 144 Colonia Cuahtemoc, 58020 Morelia, Mich.</p>
+                    <p class="rating">Tel: 443 317 8454</p>
+                    <p class="rating">Email: reservaciones@dianadelbosque.com </p>
+        
+         
                 <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
                 <h3>3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
-                <a href="http://www.hoteldianadelbosque.com/" target="_blank">Consultar</a>
+                <button><a href="http://www.hoteldianadelbosque.com/" target="_blank">Consultar</a></button><br>
             </div>
-        </div>
-    </div>
+        </div><br>
     <div>
         <button>
             <b><a href="Documentos/Tarifas 3er encuentro octubre 2025.pdf" target="_blank">TARIFAS</a></b>
