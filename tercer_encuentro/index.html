@@ -115,20 +115,78 @@
             }
         }
         /*Hoteles*/
-        @media (max-width: 600px) {
-            .contenedor-responsivo {
-                /* Cambia a disposición vertical: Imagen arriba, texto abajo */
-                flex-direction: column;
-                text-align: center; /* Opcional: Centra el texto en móvil */
-            }
-
-            .contenedor-responsivo img {
-                /* La imagen ocupa más espacio en móvil para ser visible */
-                max-width: 80%;
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
+        .hotel-section {
+            padding: 10px 5px;
+            background-color: #f5f5f5;
         }
+
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1800px;
+            margin: auto;
+        }
+
+        .hotel-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            /*max-height: 420px;*/
+            max-width: 420px;
+        }
+
+        .hotel-card img {
+            width: 100%;
+            height: 200px;
+            /*object-fit: cover;*/
+        }
+
+        .hotel-details {
+            padding: 12px 16px;
+            flex-grow: 1;
+        }
+
+        .hotel-details h2 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .hotel-details p {
+            margin: 2px 0;
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.2;
+        }
+
+        .hotel-details .code-text {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .hotel-button {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            background-color: #CEA845;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            font-size: 0.85rem;
+        }
+
+        .hotel-button:hover {
+            background-color: #b58e3a;
+        }
+        
     </style>
 </head>
 <body style="display: block;">
@@ -166,209 +224,201 @@
         }
     </script>
     
-<!--<div style="background-image: url('images/micrositio/Recurso\ 2.png');">-->
-    <br><br><br>
-      
-<!--    
-<div class="fullscreen-image">
-    <img src="images/slider/Ya-casi.jpg" alt="Imagen 1" class="slider-img">
-    <img src="images/slider2/img1.JPG" alt="Imagen 2" class="slider-img" style="display:none;">
-    <img src="images/slider2/baner1.png" alt="Imagen 3" class="slider-img" style="display:none;">
-    <img src="images/slider2/img2.JPG" alt="Imagen 3" class="slider-img" style="display:none;">
-    <img src="images/slider2/baner2.png" alt="Imagen 2" class="slider-img" style="display:none;">
-    <img src="images/slider2/img7.jpg" alt="Imagen 3" class="slider-img" style="display:none;">
-</div>
--->
-
-<script> images = document.querySelectorAll('.fullscreen-image .slider-img');
-    let currentIndex = 0;
-    function changeImage() {
-        images[currentIndex].style.display = 'none';
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].style.display = 'block';
-    }
-
-    setInterval(changeImage, 2000);
-</script>
-<script> 
-    function changeImage() {
-        images[currentIndex].classList.remove('active');  
-        currentIndex = (currentIndex + 1) % images.length; 
-        images[currentIndex].classList.add('active');     
-    }
-</script>
-
-<div class="fbase">
-       <br><br><br>
-    
-    <div id="contador">
-        <div>
-            <span id="dias">0</span>
-            Días
-        </div>
-        <div class="separador">:</div> 
-        <div>
-            <span id="horas">0</span>
-            Horas
-        </div>
-        <div class="separador">:</div> 
-        <div>
-            <span id="minutos">0</span>
-            Minutos
-        </div>
-        <div class="separador">:</div> 
-        <div>
-            <span id="segundos">0</span>
-            Segundos
-        </div>
-    </div><br><br>
-    <section>
-        <div class="tabs-menu">
-            <button class="tab-button active" data-tab="jueves">Jueves 30/10</button>
-            <button class="tab-button" data-tab="viernes">Viernes 31/10</button>
-            <button class="tab-button" data-tab="iltras">Instituto Latinoamericano de Derecho del Trabajo y Seguridad Social</button>
-        </div>
-        <div class="container">
-            <div class="tab-content active" id="jueves">
-                <img src="images/jueves30.png" alt="Programa Jueves 30 de Octubre" loading="lazy" />
-            </div>
-            <div class="tab-content" id="viernes">
-                <img src="images/viernes31.png" alt="Programa Viernes 31 de Octubre" loading="lazy" />
-            </div>
-            <div class="tab-content" id="iltras">
-               <img src="images/iltras1.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras2.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras3.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras4.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras5.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras6.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras7.png" alt="Iltras" loading="lazy" />
-               <img src="images/iltras8.png" alt="Iltras" loading="lazy" />
-            </div>
-        </div>
-    </section>
-    <br><br>
-    <div class="container">
-        <!-- Sección del mapa -->
-        <div class="map-section">
-          <h1 class="text-section">Ubicación</h1>
-          <p class="text-section">Casa Michoacán</p>
-      
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120218.30071024854!2d-101.3463630566406!3d19.677602399999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0db58cda15cb%3A0x7808273fe4e3640b!2sCasa%20Michoac%C3%A1n!5e0!3m2!1sen!2smx!4v1756335229400!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      
-        <!-- Sección derecha con foto y botón -->
-        <div class="right-section">
-          <div class="photo-box">
-            <img class="qrgen" src="images/registro 3er encuentro.png"  />
-          </div>
-          <a href="https://siconcilio.cclmichoacan.gob.mx/registro_tercer_encuentro" target="_blank" class="styled-button">Regístrate aquí</a> </div>
+    <!--<div style="background-image: url('images/micrositio/Recurso\ 2.png');">-->
+        <br><br><br>
+        
+    <!--    
+    <div class="fullscreen-image">
+        <img src="images/slider/Ya-casi.jpg" alt="Imagen 1" class="slider-img">
+        <img src="images/slider2/img1.JPG" alt="Imagen 2" class="slider-img" style="display:none;">
+        <img src="images/slider2/baner1.png" alt="Imagen 3" class="slider-img" style="display:none;">
+        <img src="images/slider2/img2.JPG" alt="Imagen 3" class="slider-img" style="display:none;">
+        <img src="images/slider2/baner2.png" alt="Imagen 2" class="slider-img" style="display:none;">
+        <img src="images/slider2/img7.jpg" alt="Imagen 3" class="slider-img" style="display:none;">
     </div>
-    <br><br><br><br>
-    <div class="contenidos"><br>
-        <div class="content-wrapper">
-            <div class="image-section">
-                <div class="campimg">
-                    <img class="image-editor" src="images/tercer.jpg" alt="Cartel" />
+    -->
+
+    <script> images = document.querySelectorAll('.fullscreen-image .slider-img');
+        let currentIndex = 0;
+        function changeImage() {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+        }
+
+        setInterval(changeImage, 2000);
+    </script>
+    <script> 
+        function changeImage() {
+            images[currentIndex].classList.remove('active');  
+            currentIndex = (currentIndex + 1) % images.length; 
+            images[currentIndex].classList.add('active');     
+        }
+    </script>
+
+    <div class="fbase">
+        <br><br><br>
+        <div id="contador">
+            <div>
+                <span id="dias">0</span>
+                Días
+            </div>
+            <div class="separador">:</div> 
+            <div>
+                <span id="horas">0</span>
+                Horas
+            </div>
+            <div class="separador">:</div> 
+            <div>
+                <span id="minutos">0</span>
+                Minutos
+            </div>
+            <div class="separador">:</div> 
+            <div>
+                <span id="segundos">0</span>
+                Segundos
+            </div>
+        </div><br><br>
+        <section>
+            <div class="tabs-menu">
+                <button class="tab-button active" data-tab="jueves">Jueves 30/10</button>
+                <button class="tab-button" data-tab="viernes">Viernes 31/10</button>
+                <button class="tab-button" data-tab="iltras">Instituto Latinoamericano de Derecho del Trabajo y Seguridad Social</button>
+            </div>
+            <div class="container">
+                <div class="tab-content active" id="jueves">
+                    <img src="images/jueves30.png" alt="Programa Jueves 30 de Octubre" loading="lazy" />
+                </div>
+                <div class="tab-content" id="viernes">
+                    <img src="images/viernes31.png" alt="Programa Viernes 31 de Octubre" loading="lazy" />
+                </div>
+                <div class="tab-content" id="iltras">
+                <img src="images/iltras1.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras2.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras3.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras4.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras5.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras6.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras7.png" alt="Iltras" loading="lazy" />
+                <img src="images/iltras8.png" alt="Iltras" loading="lazy" />
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <div class="container">
+            <!-- Sección del mapa -->
+            <div class="map-section">
+            <h1 class="text-section">Ubicación</h1>
+            <p class="text-section">Casa Michoacán</p>
+        
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120218.30071024854!2d-101.3463630566406!3d19.677602399999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0db58cda15cb%3A0x7808273fe4e3640b!2sCasa%20Michoac%C3%A1n!5e0!3m2!1sen!2smx!4v1756335229400!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+        
+            <!-- Sección derecha con foto y botón -->
+            <div class="right-section">
+            <div class="photo-box">
+                <img class="qrgen" src="images/registro 3er encuentro.png"  />
+            </div>
+            <a href="https://siconcilio.cclmichoacan.gob.mx/registro_tercer_encuentro" target="_blank" class="styled-button">Regístrate aquí</a> </div>
+        </div>
+        <br><br><br><br>
+        <div class="contenidos"><br>
+            <div class="content-wrapper">
+                <div class="image-section">
+                    <div class="campimg">
+                        <img class="image-editor" src="images/tercer.jpg" alt="Cartel" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="contenedor-responsivo">
-        <img src="images/Hotel_horizon.png" alt="Vista Express Morelia">
-        <div class="contenido-texto">
-            <h3>HOLIDAY INN EXPRESS CENTRO HISTÓRICO</h3>
-            <p>Portal Hidalgo 245 58000 Morelia, Mich.</p>
-            <p class="rating">Tel: 443 310 8400</p>
-            <p class="rating">Email: holidayinnexpress<br>moreliacentro@gosahoteles.com</p>
-            <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
-            <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
-            <button><a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a></button><br>
-        </div><br>
-        <img src="images/hotel_camelinas.jpg" alt="Vista Express Morelia">
-            <div class="contenido-texto">
-        
-                    <h2>HOLIDAY INN CAMELINAS</h2>
-                    <p>Periférico Paseo de la Republica 3466 sector nueva España 58295 Morelia, Mich.</p>
-                    <p class="rating">Tel: 443 314 3111</p>
-                    <p class="rating">Email: recepcionhinnmorelia@citelis.mx</p>
-               
-
-                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
-                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
-                <button><a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a></button><br>
-            </div><br>
-            <img src="images/Hotel_horizon.png" alt="Vista Express Morelia">
-            <div class="contenido-texto">
-         
-                    <h2>HOTEL HORIZON</h2>
-                    <p>Periférico Paseo de la Republica 3325 Pob. Ocolusen 58270 Morelia, Mich.</p>
-                    <p class="rating">Tel: 443 113 1500</p>
-                    <p class="rating">Email: recepcion@horizon.mx </p>
-        
-
-          
-                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
-                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
-                <button><a href="https://www.horizon.mx/es/index.html" target="_blank">Consultar</a></button><br>
-            </div><br>
-      
-
-            <img src="images/Hotel_diana.png" alt="Vista Express Morelia">
-            <div class="contenido-texto">
-          
-                    <h2>HOTEL DIANA DEL BOSQUE</h2>
-                    <p>Rafael Carrillo 144 Colonia Cuahtemoc, 58020 Morelia, Mich.</p>
-                    <p class="rating">Tel: 443 317 8454</p>
-                    <p class="rating">Email: reservaciones@dianadelbosque.com </p>
-        
-         
-                <p>Para hacer tu reservación llama directamente y utiliza el código:<strong></strong></p>
-                <h3>3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
-                <button><a href="http://www.hoteldianadelbosque.com/" target="_blank">Consultar</a></button><br>
+        <br>
+        <div class="hotel-section">
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <img src="images/hotel.png" alt="Vista Express Morelia">
+                    <div class="hotel-details">
+                        <h2>HOLIDAY INN EXPRESS CENTRO HISTÓRICO</h2>
+                        <p>Portal Hidalgo 245 58000 Morelia, Mich.</p>
+                        <p><strong>Tel: </strong>443 310 8400</p>
+                        <p><strong>Email: </strong>holidayinnexpressmoreliacentro@gosahoteles.com</p>
+                        <p>Para hacer tu reservación llama directamente y utiliza el código:</p>
+                        <h3 class="code-text">3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
+                        <a class="hotel-button" href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <img src="images/hotel_camelinas.jpg" alt="Vista Camelinas Morelia">
+                    <div class="hotel-details">
+                        <h2>HOLIDAY INN CAMELINAS</h2>
+                        <p>Periférico Paseo de la Republica 3466 sector nueva España 58295 Morelia, Mich.</p>
+                        <p><strong>Tel: </strong> 443 314 3111</p>
+                        <p><strong>Email: </strong> recepcionhinnmorelia@citelis.mx</p>
+                        <p>Para hacer tu reservación llama directamente y utiliza el código:</p>
+                        <h3 class="code-text">3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
+                        <a class="hotel-button" href="https://www.ihg.com/holidayinnexpress/hotels/us/es/morelia/mlmch/hoteldetail" target="_blank">Consultar</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <img src="images/Hotel_horizon.png" alt="Vista Horizon Morelia">
+                    <div class="hotel-details">
+                        <h2>HOTEL HORIZON</h2>
+                        <p>Periférico Paseo de la Republica 3325 Pob. Ocolusen 58270 Morelia, Mich.</p>
+                        <p><strong>Tel: </strong>443 113 1500</p>
+                        <p><strong>Email: </strong> recepcion@horizon.mx </p>
+                        <p>Para hacer tu reservación llama directamente y utiliza el código:</p>
+                        <h3  class="code-text">3ER ENCUENTRO NACIONAL DE CONCILIACION Y JUSTICIA LABORAL </h3>
+                        <a class="hotel-button" href="https://www.horizon.mx/es/index.html" target="_blank">Consultar</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <img src="images/Hotel_diana.png" alt="Vista Diana Morelia">
+                    <div class="hotel-details">
+                        <h2>HOTEL DIANA DEL BOSQUE</h2>
+                        <p>Rafael Carrillo 144 Colonia Cuahtemoc, 58020 Morelia, Mich.</p>
+                         <p><strong>Tel: </strong> 443 317 8454</p>
+                        <p><strong>Email: </strong> reservaciones@dianadelbosque.com </p>
+                        <p>Para hacer tu reservación llama directamente y utiliza el código:</p>
+                        <h3  class="code-text">3ER ENCUENTRO NACIONAL DE CONCILIACIÓN Y JUSTICIA LABORAL </h3>
+                        <a class="hotel-button" href="http://www.hoteldianadelbosque.com/" target="_blank">Consultar</a>
+                    </div>
+                </div>
             </div>
         </div><br>
-    <div>
-        <button>
-            <b><a href="Documentos/Tarifas 3er encuentro octubre 2025.pdf" target="_blank">TARIFAS</a></b>
-        </button>
-    </div><br>
-    <div class="button-container">
-        
-        <button onclick="mostrarTexto('Informar el impacto de la Reforma Constitucional publicada en el Diario Oficial de la Federación el dia 24 de febrero del año 2017, dando paso al Actual Sistema de Justicia Laboral, con la creación de nuevas instituciones en materia laboral encargadas de conocer, por un lado, los Centros de Conciliación Laboral y por otro, los Tribunales Laborales, adscritos a los Poderes Judiciales; por esta razón resulta necesario organizar y celebrar el Tercer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
-        >Misión</button>
-        <button onclick="mostrarTexto('Promover la participación de los protagonistas del Actual Sistema de Justicia Laboral, como personal de los Centros de Conciliación, de los Tribunales Laborales, Académicos, Operadores Jurídicos, Estudiantes y Público en general, a través de espacios de reflexión, conferencias magistrales y conversatorios, con la finalidad de exponer ideas, experiencias y perspectivas acerca del tema, dando como resultado un libro de memorias donde se destaque la importancia, académica, social y cultural de Nuestro Actual Sistema de Justicia Laboral en el país.')"
-        >Visión</button>
-        <button onclick="mostrarTexto('Reflexionar y Retroalimentar acerca del impacto del Actual Sistema de Justicia Laboral en el país, sobre temas relacionados con la Conciliación, la Justicia Laboral y los Derechos Humanos Laborales, con la celebración del Tercer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán de Ocampo.')"
-        >Objetivo</button>
-    </div>
-
-    <div class="message" id="message"></div>
-
-    <script>
-        function mostrarTexto(texto) {
-            const messageDiv = document.getElementById("message");
-            if (messageDiv.textContent === texto && messageDiv.style.visibility === 'visible') {
-                messageDiv.style.visibility = 'hidden'; 
-            } else {
-                messageDiv.textContent = texto; 
-                messageDiv.style.visibility = 'visible'; 
+        <div>
+            <button>
+                <b><a href="Documentos/Tarifas 3er encuentro octubre 2025.pdf" target="_blank">TARIFAS</a></b>
+            </button>
+        </div><br>
+        <div class="button-container">
+            <button onclick="mostrarTexto('Informar el impacto de la Reforma Constitucional publicada en el Diario Oficial de la Federación el dia 24 de febrero del año 2017, dando paso al Actual Sistema de Justicia Laboral, con la creación de nuevas instituciones en materia laboral encargadas de conocer, por un lado, los Centros de Conciliación Laboral y por otro, los Tribunales Laborales, adscritos a los Poderes Judiciales; por esta razón resulta necesario organizar y celebrar el Tercer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán.')"
+            >Misión</button>
+            <button onclick="mostrarTexto('Promover la participación de los protagonistas del Actual Sistema de Justicia Laboral, como personal de los Centros de Conciliación, de los Tribunales Laborales, Académicos, Operadores Jurídicos, Estudiantes y Público en general, a través de espacios de reflexión, conferencias magistrales y conversatorios, con la finalidad de exponer ideas, experiencias y perspectivas acerca del tema, dando como resultado un libro de memorias donde se destaque la importancia, académica, social y cultural de Nuestro Actual Sistema de Justicia Laboral en el país.')"
+            >Visión</button>
+            <button onclick="mostrarTexto('Reflexionar y Retroalimentar acerca del impacto del Actual Sistema de Justicia Laboral en el país, sobre temas relacionados con la Conciliación, la Justicia Laboral y los Derechos Humanos Laborales, con la celebración del Tercer Encuentro Nacional de Conciliación y Justicia Laboral en Michoacán de Ocampo.')"
+            >Objetivo</button>
+        </div>
+        <div class="message" id="message"></div>
+        <script>
+            function mostrarTexto(texto) {
+                const messageDiv = document.getElementById("message");
+                if (messageDiv.textContent === texto && messageDiv.style.visibility === 'visible') {
+                    messageDiv.style.visibility = 'hidden'; 
+                } else {
+                    messageDiv.textContent = texto; 
+                    messageDiv.style.visibility = 'visible'; 
+                }
             }
-        }
-    </script>
-      
-    <div id="templatemo_main" style="text-align: center;" >
-        <video width="1000"  class="video" height="550" controls poster="images/Videos/imgvideo.jpeg" >
-            <source src="images/Videos/video_final.mp4" type="Video/mp4">
-         </video>
+        </script>
+        
+        <div id="templatemo_main" style="text-align: center;" >
+            <video width="1000"  class="video" height="550" controls poster="images/Videos/imgvideo.jpeg" >
+                <source src="images/Videos/video_final.mp4" type="Video/mp4">
+            </video>
+        </div>
     </div>
-
-</div>
-</div>
-      <footer>
+    <footer>
 		<div class="footer-container">
 			<div class="footer-logo">
 				<img src="images/MICHOACAN ES MEJOR.png" alt="Logo Michoacán">
@@ -378,9 +428,7 @@
 				https://www.facebook.com/share/p/5ZkRpPXkcLU5f22B/?mibextid=QwDbR1" class="social-icon" target="_blank"><img src="images/bface.png" ></a>
 				<a href="https://www.instagram.com/p/DAHE5ccyEuf/?igsh=MTZoOTFzdjJ6MzZ4cg==" class="social-icon" target="_blank"><img src="images/binsta.png"  ></i></a>
 				<a href="https://x.com/cclmichoacan/status/1836850990471074230?s=46&t=b2fwr9Vcf8iWYVavE8GJgA" target="_blank" class="social-icon"><img src="images/btuiter6.png"  ></i></a>
-				
 			</div>
-            
 			<div class="footer-hashtag">
 				#GobiernoDeMichoacán
 			</div>
@@ -389,86 +437,82 @@
 			© Desarrollado por CCL Michoacán | Gobierno del Estado de Michoacán 2025
 		</div>
 		<div> <a href="documentos/AvisoPrivacidad/Aviso_de_Privacidad_Simplificado.pdf" target="_blank"
-			style="color:#ffff;">Aviso de privacidad</a> </div>
+			style="color:#ffff;">Aviso de privacidad</a> 
+        </div>
 	</footer>
      
     <!-- Javascript-->
     <script>
-    const fechaObjetivo = new Date("Oct 30, 2025 09:00:00").getTime();
+        const fechaObjetivo = new Date("Oct 30, 2025 09:00:00").getTime();
+        const actualizaContador = () => {
+            const ahora = new Date().getTime();
+            const diferencia = fechaObjetivo - ahora;
 
-const actualizaContador = () => {
-    const ahora = new Date().getTime();
-    const diferencia = fechaObjetivo - ahora;
+            // Calcular 
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
-    // Calcular 
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+            // Mostrar
+            document.getElementById("dias").textContent = dias;
+            document.getElementById("horas").textContent = horas;
+            document.getElementById("minutos").textContent = minutos;
+            document.getElementById("segundos").textContent = segundos;
 
-    // Mostrar
-    document.getElementById("dias").textContent = dias;
-    document.getElementById("horas").textContent = horas;
-    document.getElementById("minutos").textContent = minutos;
-    document.getElementById("segundos").textContent = segundos;
+            if (diferencia < 0) {
+                clearInterval(intervalo);
+                document.getElementById("contador").innerHTML = "¡El evento ha comenzado!";
+            }
+        };
 
-    
-    if (diferencia < 0) {
-        clearInterval(intervalo);
-        document.getElementById("contador").innerHTML = "¡El evento ha comenzado!";
-    }
-};
+        // Actualizar 
+        const intervalo = setInterval(actualizaContador, 1000);
+    </script>
 
+    <script>
+        let slideIndex = 0;
+        function moveCarousel(n) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
+            const carouselContainer = document.querySelector('.carousel-container');
+            
+            slideIndex += n;
 
-// Actualizar 
-const intervalo = setInterval(actualizaContador, 1000);
-</script>
+            if (slideIndex >= totalSlides) {
+                slideIndex = 0; 
+            }
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - 1; 
+            }
 
-<script>
-let slideIndex = 0;
+            const offset = -(slideIndex * 100); 
+            carouselContainer.style.transform = `translateX(${offset}%)`;
+        }
 
-function moveCarousel(n) {
-    const slides = document.querySelectorAll('.carousel-slide');
-    const totalSlides = slides.length;
-    const carouselContainer = document.querySelector('.carousel-container');
-    
-    slideIndex += n;
+        function autoCarousel() {
+            moveCarousel(1); 
+            setTimeout(autoCarousel, 1000); 
+        }
 
-    if (slideIndex >= totalSlides) {
-        slideIndex = 0; 
-    }
-    if (slideIndex < 0) {
-        slideIndex = totalSlides - 1; 
-    }
+        autoCarousel(); 
+    </script>
+    <script>
+        //Para visualizar las imagenes del programa
+        const buttons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
 
-    const offset = -(slideIndex * 100); 
-    carouselContainer.style.transform = `translateX(${offset}%)`;
-}
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+            buttons.forEach((btn) => btn.classList.remove('active'));
+            contents.forEach((content) => content.classList.remove('active'));
 
-
-function autoCarousel() {
-    moveCarousel(1); 
-    setTimeout(autoCarousel, 1000); 
-}
-
-autoCarousel(); 
-</script>
-<script>
-    //Para visualizar las imagenes del programa
-    const buttons = document.querySelectorAll('.tab-button');
-    const contents = document.querySelectorAll('.tab-content');
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-        buttons.forEach((btn) => btn.classList.remove('active'));
-        contents.forEach((content) => content.classList.remove('active'));
-
-        button.classList.add('active');
-        const tabId = button.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
+            button.classList.add('active');
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+            });
         });
-    });
-</script>
+    </script>
    
 </body>
 </html>
