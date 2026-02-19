@@ -131,6 +131,7 @@
             text-align: justify; 
             margin: 5px auto;
 		}
+		
 		@media (max-width: 800px) {
 			.card-text-white {
 				width: 90%; /* Más ancho en móviles */
@@ -151,44 +152,53 @@
 	</div>
 <!-- MENU -->
 	<header class="section page-header">
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top justify-content-between">
-			<div class="rd-navbar-brand"><a href="index.html"><img src="images/Logos2.png" width="260" height="90"></a></div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  	<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html" style="color:  #6A0F49;"><b>INICIO</b></a>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<div class="container-fluid">
+				<div class="rd-navbar-brand">
+				<a href="index.html">
+					<img src="images/Logos2.png" class="logo-nav" alt="Logo">
+				</a>
+				</div>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item">
+					<a class="nav-link active" href="index.html"><b>INICIO</b></a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="index.html#acerca"
-						style="color: #6A0F49;"><b>ACERCA DE</b></a></li>
-					<li class="nav-item"><a class="nav-link" href="index.html#servicios"
-							style="color: #6A0F49;"><b>SERVICIOS</b></a></li>
-					<li class="nav-item"><a class="nav-link" href="index.html#contac"
-							style="color:  #6A0F49;"><b>CONTACTO</b></a>
+					<li class="nav-item">
+					<a class="nav-link" href="index.html#acerca"><b>ACERCA DE</b></a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="index.html#servicios"><b>SERVICIOS</b></a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="index.html#contac"><b>CONTACTO</b></a>
 					</li>
 
-					<li class="nav-item dropdown">
-						<a style="color: #6A0F49;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<b>MENU</b>
-						</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="PersonalD.html">Personal Directivo</a>
-							<a class="dropdown-item" href="DelegM.html">Delegación Morelia</a>
-							<a class="dropdown-item" href="DelegU.html">Delegación Uruapan</a>
-							<a class="dropdown-item" href="DelegZ.html">Delegación Zamora</a>
-							<a class="dropdown-item" href="DirectorioG.html">Directorio General</a>
-						  	<a class="dropdown-item" href="Organigrama.html">Organigrama</a>
-						  	<div class="dropdown-divider"></div>
-							  	<a class="dropdown-item"  target="_blank" href="encuentro_nacional_ccl/index.html" >1ro encuentro</a>
-								<a class="dropdown-item"  target="_blank" href="encuentro_nacional_ccl2/index.html" >2ro encuentro</a>
-							</div>
-						</div>
+					<li class="nav-item dropdown text-end">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<b>MENU</b>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="PersonalD.html">Personal Directivo</a>
+						<a class="dropdown-item" href="DelegM.html">Delegación Morelia</a>
+						<a class="dropdown-item" href="DelegU.html">Delegación Uruapan</a>
+						<a class="dropdown-item" href="DelegZ.html">Delegación Zamora</a>
+						<a class="dropdown-item" href="DirectorioG.html">Directorio General</a>
+						<a class="dropdown-item" href="Organigrama.html">Organigrama</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" target="_blank" href="encuentro_nacional_ccl/index.html">1ro encuentro</a>
+						<a class="dropdown-item" target="_blank" href="encuentro_nacional_ccl2/index.html">2ro encuentro</a>
+					</div>
 					</li>
 				</ul>
+				</div>
 			</div>
-		</nav>
+			</nav>
 	</header>
 	<br><br>
 
